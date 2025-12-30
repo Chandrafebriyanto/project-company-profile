@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <>
-      <header className="w-full bg-white flex items-center justify-between py-4 px-[min(3rem,5%)] border-b sticky top-0">
+      <header className="w-full bg-white flex items-center justify-between py-4 px-[min(3rem,5%)] border-b sticky top-0 z-50">
         <div className="flex items-center gap-2">
           <span className="material-symbols-outlined text-[20px] text-white bg-blue-700 rounded-md p-2">
             verified
@@ -13,25 +13,25 @@ function Navbar() {
         <div className="flex items-center gap-2">
           <nav className="flex items-center gap-10">
             <a
-              href="#"
+              href="/"
               className="text-slate-900 hover:text-blue-700 text-sm font-medium duration-100 ease-in-out"
             >
               Home
             </a>
             <a
-              href="#"
+              href="/About"
               className="text-slate-900 hover:text-blue-700 text-sm font-medium duration-300 ease-in-out"
             >
               About
             </a>
             <a
-              href="#"
+              href="/Services"
               className="text-slate-900 hover:text-blue-700 text-sm font-medium duration-300 ease-in-out"
             >
               Services
             </a>
             <a
-              href="#"
+              href="/Contact"
               className="text-slate-900 hover:text-blue-700 text-sm font-medium duration-300 ease-in-out"
             >
               Contact
