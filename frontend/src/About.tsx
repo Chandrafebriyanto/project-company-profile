@@ -1,6 +1,7 @@
 import Heroabout from "./components/HeroAbout";
 import Stats from "./components/stats";
 import Visimisi from "./components/Visimisi";
+import Team from "./components/Team";
 
 function About() {
   return (
@@ -9,6 +10,7 @@ function About() {
         <Heroabout />
         <Stats />
         <Visimisi />
+        <Team />
       </div>
     </>
   );
