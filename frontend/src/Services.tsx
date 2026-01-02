@@ -1,0 +1,58 @@
+import { Link } from "react-router-dom";
+import ServicesItem from "./components/ServicesItem";
+
+function Services() {
+  return (
+    <>
+      {/* Services Intro */}
+      <div className="bg-background-light">
+        <div className="text-center justify-items-center py-40 px-5 w-max-[900px] mx-auto md:w-[900px]">
+          <div className="flex items-center gap-1 bg-primary/20 px-3 py-1 rounded-full border border-slate-200 w-max mb-1">
+            <p className="text-primary text-sm font-bold"> What We Do</p>
+          </div>
+          <h1 className="font-black text-[2rem] leading-none my-10 md:text-[4rem] text-slate-900">
+            Solutions Tailored to your Business needs
+          </h1>
+          <p className="text-m text-slate-600 md:text-xl">
+            We leverage cutting-edge technology and creative strategy to drive
+            growth and efficiency for your organization
+          </p>
+        </div>
+      </div>
+
+      {/* Services */}
+      <ServicesItem />
+
+      {/* CTA */}
+      <section className="py-16 sm:py-24 bg-background-light">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="overflow-hidden rounded-2xl bg-white  shadow-xl ring-1 ring-slate-900/5 ">
+            <div className="flex flex-col items-center justify-center gap-6 px-6 py-12 text-center sm:px-12 sm:py-16">
+              <h2 className="max-w-2xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                Ready to start your project?
+              </h2>
+              <p className="max-w-xl text-lg text-slate-600">
+                Contact us today for a detailed proposal tailored specifically
+                to your needs and goals.
+              </p>
+              <div className="mt-4 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
+                <Link to="/contact">
+                  <button className="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-base font-bold text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-colors">
+                    Get a Quote
+                  </button>
+                </Link>
+                <Link to="/portfolio">
+                  <button className="inline-flex h-12 items-center justify-center rounded-lg border border-slate-300 bg-transparent px-8 text-base font-bold text-slate-900 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 transition-colors">
+                    View Portfolio
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+export default Services;

@@ -2,7 +2,6 @@ import Heroabout from "./components/HeroAbout";
 import Stats from "./components/stats";
 import Visimisi from "./components/Visimisi";
 import Team from "./components/Team";
-import Footer from "./components/Footer";
 
 function About() {
   return (
@@ -12,7 +11,6 @@ function About() {
         <Stats />
         <Visimisi />
         <Team />
-        <Footer />
       </div>
     </>
   );
