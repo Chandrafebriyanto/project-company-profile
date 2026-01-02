@@ -1,7 +1,7 @@
 function Socialproof() {
   return (
     <>
-      <section className="bg-white w-full px-[min(3rem,5%)] py-6 my-10 shadow-sm">
+      <section className="bg-white w-full px-[min(3rem,5%)] py-6 mt-10 shadow-sm">
         <div className="justify-items-center">
           <h1 className="font-medium text-slate-800 opacity-60 grayscale">
             Trusted By Industri Leaders
