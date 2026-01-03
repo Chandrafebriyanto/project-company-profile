@@ -1,51 +1,13 @@
-import { useRef } from 'react';
-
 function Testimonial() {
-  // Tambahkan <HTMLDivElement> biar TS tahu ini buat elemen DIV
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  // Tambahkan type : string
-  const scroll = (direction: string) => {
-    if (scrollRef.current) {
-      const { current } = scrollRef;
-      const scrollAmount = 400;
-      
-      if (direction === 'left') {
-        current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-      } else {
-        current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-      }
-    }
-  };
-
   return (
     <>
-      <div className="flex justify-between px-[min(3rem,5%)] py-10 items-center scrollbar-hide">
+      <div className="flex justify-between px-[min(3rem,5%)] py-10 items-center">
         <h1 className="font-bold text-xl md:text-2xl">What Our Clients Say</h1>
-        <div className='hidden'>
-          <button
-            onClick={() => scroll('left')}
-            className="border-2 py-2 px-1 md:py-3 md:px-2 rounded-full m-1 font-medium text-white bg-primary cursor-pointer hover:bg-blue-700 hover:shadow-md transition-colors"
-          >
-            ←
-          </button>
-          
-          <button
-            onClick={() => scroll('right')}
-            className="border-2 py-2 px-1 md:py-3 md:px-2 rounded-full m-1 font-medium text-white bg-primary cursor-pointer hover:bg-blue-700 hover:shadow-md transition-colors"
-          >
-            →
-          </button>
-        </div>
       </div>
-      
-      <div 
-        ref={scrollRef}
-        className="flex gap-6 overflow-auto px-[min(3rem,5%)] pb-10 scrollbar-hide snap-x"
-      >
-        
+
+      <div className="flex gap-6 overflow-auto px-5 lg:px-10 pb-10">
         {/* */}
-        <div className="snap-start min-w-[320px] md:min-w-[380px] flex-1 bg-white :bg-slate-800 p-8 rounded-xl border border-slate-100 :border-slate-700 shadow-sm flex flex-col justify-between gap-6 relative overflow-hidden group hover:shadow-xl transition-shadow">
+        <div className="group snap-start min-w-[320px] md:min-w-[380px] flex-1 bg-white p-8 rounded-xl border border-slate-100 shadow-sm flex flex-col justify-between gap-6 relative overflow-hidden group hover:shadow-xl hover:-translate-y-2 transition-all">
           <div className="absolute top-0 right-0 p-6 opacity-10 text-primary">
             <span className="material-symbols-outlined text-8xl leading-none">
               format_quote
@@ -53,11 +15,21 @@ function Testimonial() {
           </div>
           <div className="relative z-10">
             <div className="flex text-yellow-400 mb-4">
-              <span className="material-symbols-outlined text-sm fill-current">star</span>
-              <span className="material-symbols-outlined text-sm fill-current">star</span>
-              <span className="material-symbols-outlined text-sm fill-current">star</span>
-              <span className="material-symbols-outlined text-sm fill-current">star</span>
-              <span className="material-symbols-outlined text-sm fill-current">star</span>
+              <span className="material-symbols-outlined text-sm fill-current">
+                star
+              </span>
+              <span className="material-symbols-outlined text-sm fill-current">
+                star
+              </span>
+              <span className="material-symbols-outlined text-sm fill-current">
+                star
+              </span>
+              <span className="material-symbols-outlined text-sm fill-current">
+                star
+              </span>
+              <span className="material-symbols-outlined text-sm fill-current">
+                star
+              </span>
             </div>
             <p className="text-slate-700 text-lg leading-relaxed font-medium">
               "The team transformed our digital presence completely. Their
@@ -65,7 +37,7 @@ function Testimonial() {
               industry."
             </p>
           </div>
-          <div className="flex items-center gap-4 relative z-10 pt-4 border-t border-slate-100 :border-slate-700">
+          <div className="flex items-center gap-4 relative z-10 pt-4 border-t border-slate-100">
             <div
               className="w-12 h-12 rounded-full bg-cover bg-center"
               data-alt="Portrait of John Doe smiling"
@@ -79,7 +51,7 @@ function Testimonial() {
               <p className="text-slate-900 font-bold text-sm">John Doe</p>
               <p className="text-slate-500 text-xs">CEO at TechCorp</p>
             </div>
-            <div className="ml-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-opacity">
+            <div className="ml-auto opacity-50 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-opacity">
               <div
                 className="h-16 w-16 bg-contain bg-no-repeat bg-right"
                 data-alt="Small logo of TechCorp"
@@ -95,7 +67,7 @@ function Testimonial() {
         </div>
 
         {/* */}
-        <div className="snap-start min-w-[320px] md:min-w-[380px] flex-1 bg-white :bg-slate-800 p-8 rounded-xl border border-slate-100 :border-slate-700 shadow-sm flex flex-col justify-between gap-6 relative overflow-hidden group hover:shadow-xl transition-shadow">
+        <div className="group snap-start min-w-[320px] md:min-w-[380px] flex-1 bg-white p-8 rounded-xl border border-slate-100 shadow-sm flex flex-col justify-between gap-6 relative overflow-hidden group hover:shadow-xl hover:-translate-y-2 transition-all">
           <div className="absolute top-0 right-0 p-6 opacity-10 text-primary">
             <span className="material-symbols-outlined text-8xl leading-none">
               format_quote
@@ -103,18 +75,28 @@ function Testimonial() {
           </div>
           <div className="relative z-10">
             <div className="flex text-yellow-400 mb-4">
-              <span className="material-symbols-outlined text-sm fill-current">star</span>
-              <span className="material-symbols-outlined text-sm fill-current">star</span>
-              <span className="material-symbols-outlined text-sm fill-current">star</span>
-              <span className="material-symbols-outlined text-sm fill-current">star</span>
-              <span className="material-symbols-outlined text-sm fill-current">star</span>
+              <span className="material-symbols-outlined text-sm fill-current">
+                star
+              </span>
+              <span className="material-symbols-outlined text-sm fill-current">
+                star
+              </span>
+              <span className="material-symbols-outlined text-sm fill-current">
+                star
+              </span>
+              <span className="material-symbols-outlined text-sm fill-current">
+                star
+              </span>
+              <span className="material-symbols-outlined text-sm fill-current">
+                star
+              </span>
             </div>
             <p className="text-slate-700 text-lg leading-relaxed font-medium">
               "Exceptional quality and dedication to the project goals. They
               delivered on time and exceeded all our expectations."
             </p>
           </div>
-          <div className="flex items-center gap-4 relative z-10 pt-4 border-t border-slate-100 :border-slate-700">
+          <div className="flex items-center gap-4 relative z-10 pt-4 border-t border-slate-100">
             <div
               className="w-12 h-12 rounded-full bg-cover bg-center"
               data-alt="Portrait of Jane Smith looking professional"
@@ -128,7 +110,7 @@ function Testimonial() {
               <p className="text-slate-900 font-bold text-sm">Jane Smith</p>
               <p className="text-slate-500 text-xs">Director at Innovate</p>
             </div>
-            <div className="ml-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-opacity">
+            <div className="ml-auto opacity-50 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-opacity">
               <div
                 className="h-16 w-16 bg-contain bg-no-repeat bg-right"
                 data-alt="Small logo of Innovate"
@@ -144,7 +126,7 @@ function Testimonial() {
         </div>
 
         {/* */}
-        <div className="snap-start min-w-[320px] md:min-w-[380px] flex-1 bg-white :bg-slate-800 p-8 rounded-xl border border-slate-100 :border-slate-700 shadow-sm flex flex-col justify-between gap-6 relative overflow-hidden group hover:shadow-xl transition-shadow">
+        <div className="group snap-start min-w-[320px] md:min-w-[380px] flex-1 bg-white p-8 rounded-xl border border-slate-100 shadow-sm flex flex-col justify-between gap-6 relative overflow-hidden group hover:shadow-xl hover:-translate-y-2 transition-all">
           <div className="absolute top-0 right-0 p-6 opacity-10 text-primary">
             <span className="material-symbols-outlined text-8xl leading-none">
               format_quote
@@ -152,18 +134,28 @@ function Testimonial() {
           </div>
           <div className="relative z-10">
             <div className="flex text-yellow-400 mb-4">
-              <span className="material-symbols-outlined text-sm fill-current">star</span>
-              <span className="material-symbols-outlined text-sm fill-current">star</span>
-              <span className="material-symbols-outlined text-sm fill-current">star</span>
-              <span className="material-symbols-outlined text-sm fill-current">star</span>
-              <span className="material-symbols-outlined text-sm fill-current">star</span>
+              <span className="material-symbols-outlined text-sm fill-current">
+                star
+              </span>
+              <span className="material-symbols-outlined text-sm fill-current">
+                star
+              </span>
+              <span className="material-symbols-outlined text-sm fill-current">
+                star
+              </span>
+              <span className="material-symbols-outlined text-sm fill-current">
+                star
+              </span>
+              <span className="material-symbols-outlined text-sm fill-current">
+                star
+              </span>
             </div>
             <p className="text-slate-700 :text-slate-300 text-lg leading-relaxed font-medium">
               "A trustworthy partner that consistently delivers top-tier
               results. We highly recommend their services to any enterprise."
             </p>
           </div>
-          <div className="flex items-center gap-4 relative z-10 pt-4 border-t border-slate-100 :border-slate-700">
+          <div className="flex items-center gap-4 relative z-10 pt-4 border-t border-slate-100">
             <div
               className="w-12 h-12 rounded-full bg-cover bg-center"
               data-alt="Portrait of Mike Ross looking confident"
@@ -177,7 +169,7 @@ function Testimonial() {
               <p className="text-slate-900 font-bold text-sm">Mike Ross</p>
               <p className="text-slate-500 text-xs">Founder at StartUp</p>
             </div>
-            <div className="ml-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-opacity">
+            <div className="ml-auto opacity-50 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-opacity">
               <div
                 className="h-16 w-16 bg-contain bg-no-repeat bg-right"
                 data-alt="Small logo of StartUp"
@@ -191,7 +183,6 @@ function Testimonial() {
             </div>
           </div>
         </div>
-
       </div>
     </>
   );

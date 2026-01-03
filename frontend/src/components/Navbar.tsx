@@ -92,14 +92,14 @@ function Navbar() {
             Services
           </Link>
           <Link
-            to="/contact"
+            to="/portofolio"
             className="text-slate-900 hover:text-blue-700 font-medium hover:pl-2 duration-300"
             onClick={() => setIsOpen(false)}
           >
-            Contact
+            Portofolio
           </Link>
           <Link
-            to="#"
+            to="/contact"
             className="bg-blue-700 text-white text-center py-3 rounded-lg font-medium hover:bg-blue-800"
             onClick={() => setIsOpen(false)}
           >

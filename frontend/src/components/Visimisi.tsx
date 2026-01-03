@@ -13,8 +13,8 @@ function Visimisi() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="flex flex-col gap-4 rounded-xl border border-[#dbdfe6] bg-white p-6 shadow-sm hover:shadow-md transition-all hover:scale-105">
-            <div className="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+          <div className="group px-6 py-7 border-2 border-slate-300 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div className="mb-6 inline-flex size-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
               <span className="material-symbols-outlined">visibility</span>
             </div>
             <div className="flex flex-col gap-2">
@@ -26,8 +26,8 @@ function Visimisi() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-4 rounded-xl border border-[#dbdfe6] bg-white p-6 shadow-sm hover:shadow-md transition-all hover:scale-105">
-            <div className="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+          <div className="group px-6 py-7 border-2 border-slate-300 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div className="mb-6 inline-flex size-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
               <span className="material-symbols-outlined">track_changes</span>
             </div>
             <div className="flex flex-col gap-2">
@@ -39,8 +39,8 @@ function Visimisi() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-4 rounded-xl border border-[#dbdfe6] bg-white p-6 shadow-sm hover:shadow-md hover:scale-105 transition-all">
-            <div className="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+          <div className="group px-6 py-7 border-2 border-slate-300 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div className="mb-6 inline-flex size-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
               <span className="material-symbols-outlined">star</span>
             </div>
             <div className="flex flex-col gap-2">

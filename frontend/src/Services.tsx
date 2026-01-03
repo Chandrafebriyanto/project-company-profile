@@ -6,14 +6,14 @@ function Services() {
     <>
       {/* Services Intro */}
       <div className="bg-background-light">
-        <div className="text-center justify-items-center py-40 px-5 w-max-[900px] mx-auto md:w-[900px]">
+        <div className="text-center justify-items-center lg:py-40 md:py-20 py-10 px-5 w-max-[900px] mx-auto md:w-[500px] lg:w-[900px]">
           <div className="flex items-center gap-1 bg-primary/20 px-3 py-1 rounded-full border border-slate-200 w-max mb-1">
             <p className="text-primary text-sm font-bold"> What We Do</p>
           </div>
-          <h1 className="font-black text-[2rem] leading-none my-10 md:text-[4rem] text-slate-900">
+          <h1 className="font-black text-[2rem] leading-none my-10 lg:text-[4rem] text-slate-900">
             Solutions Tailored to your Business needs
           </h1>
-          <p className="text-m text-slate-600 md:text-xl">
+          <p className="text-m text-slate-600 lg:text-xl">
             We leverage cutting-edge technology and creative strategy to drive
             growth and efficiency for your organization
           </p>
