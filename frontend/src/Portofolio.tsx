@@ -6,7 +6,7 @@ function Portofolio() {
       <div>
         <div className="text-center justify-items-center md:py-20 py-7 px-5 w-max-[900px] mx-auto md:w-[500px] lg:w-[900px]">
           <p className="text-primary font-bold lg:text-xl md:text-md text-sm">
-            OUR PORTOFOLIO
+            OUR PORTOFOLIO 
           </p>
 
           <h1 className="font-black leading-none lg:my-5 md:my-4 my-3 lg:text-6xl md:text-4xl text-3xl text-slate-900">
