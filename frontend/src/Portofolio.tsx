@@ -47,52 +47,14 @@ function Portofolio() {
             <h1 className="text-primary font-bold md:text-4xl text-2xl mb-1">
               25
             </h1>
-            <p className="font-semibold text-slate-600 md:font-xl text-sm">
+            <p className="font-semibold text-slate-600 md:font-xl text-sm text-">
               Global Awards
             </p>
           </div>
         </div>
       </div>
-
-      <div className="bg-background-light py-10">
-        <div>
-          <ul className="flex justify-center md:gap-7 gap-3 px-5 mb-10 md:text-base text-xs flex-wrap text-slate-600 font-semibold cursor-pointer">
-            <div className="border-2 active:border-primary rounded-full active:shadow-primary/40 active:shadow-md transition-all">
-              <li className="py-2 px-5 rounded-full active:bg-primary bg-white active:text-white border-white border-2 transition-all">
-                All Project
-              </li>
-            </div>
-            <div className="border-2 active:border-primary rounded-full active:shadow-primary/40 active:shadow-md transition-all">
-              <li className="py-2 px-5 rounded-full active:bg-primary bg-white active:text-white border-white border-2 transition-all">
-                Web Design
-              </li>
-            </div>
-            <div className="border-2 active:border-primary rounded-full active:shadow-primary/40 active:shadow-md transition-all">
-              <li className="py-2 px-5 rounded-full active:bg-primary bg-white active:text-white border-white border-2 transition-all">
-                Mobile Apps
-              </li>
-            </div>
-            <div className="border-2 active:border-primary rounded-full active:shadow-primary/40 active:shadow-md transition-all">
-              <li className="py-2 px-5 rounded-full active:bg-primary bg-white active:text-white border-white border-2 transition-all">
-                Branding
-              </li>
-            </div>
-            <div className="border-2 active:border-primary rounded-full active:shadow-primary/40 active:shadow-md transition-all">
-              <li className="py-2 px-5 rounded-full active:bg-primary bg-white active:text-white border-white border-2 transition-all">
-                Marketing
-              </li>
-            </div>
-            <div className="border-2 active:border-primary rounded-full active:shadow-primary/40 active:shadow-md transition-all">
-              <li className="py-2 px-5 rounded-full active:bg-primary bg-white active:text-white border-white border-2 transition-all">
-                Production
-              </li>
-            </div>
-          </ul>
-        </div>
-
-        {/* Project Items */}
-        <ProjectItems />
-      </div>
+      {/* Project Items */}
+      <ProjectItems />
     </>
   );
 }

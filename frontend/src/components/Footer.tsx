@@ -60,37 +60,37 @@ function Footer() {
           <div className="flex flex-col gap-2">
             <h1 className="font-bold text-lg text-slate-900 mb-2">SERVICES</h1>
             <Link
-              to="/services#brand-identity"
+              to="/services/brand-identity"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
               Brand Identity
             </Link>
             <Link
-              to="/services#web-development"
+              to="/services/web-development"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
               Web Development
             </Link>
             <Link
-              to="/services#digital-marketing"
+              to="/services/digital-marketing"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
               Digital Marketing
             </Link>
             <Link
-              to="/services#business-strategy"
+              to="/services/business-strategy"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
               Business Strategy
             </Link>
             <Link
-              to="/services#cloud-solutions"
+              to="/services/cloud-solutions"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
               Cloud Solutions
             </Link>
             <Link
-              to="/services#analytics-ai"
+              to="/services/analytics-ai"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
               Analytics & AI
