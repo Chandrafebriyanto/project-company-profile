@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ServicesItem from "./components/ServicesItem";
+import { motion } from "motion/react";
 
 function Services() {
   return (
@@ -7,16 +8,41 @@ function Services() {
       {/* Services Intro */}
       <div className="bg-background-light">
         <div className="text-center justify-items-center lg:py-40 md:py-20 py-10 px-5 w-max-[900px] mx-auto md:w-[500px] lg:w-[900px]">
-          <div className="flex items-center gap-1 bg-primary/20 px-3 py-1 rounded-full border border-slate-200 w-max mb-1">
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "tween", duration: 1, ease: "easeInOut" }}
+            className="flex items-center gap-1 bg-primary/20 px-3 py-1 rounded-full border border-slate-200 w-max mb-1"
+          >
             <p className="text-primary text-sm font-bold"> What We Do</p>
-          </div>
-          <h1 className="font-black text-[2rem] leading-none my-10 lg:text-[4rem] text-slate-900">
+          </motion.div>
+          <motion.h1
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              type: "tween",
+              duration: 1,
+              ease: "easeInOut",
+              delay: 0.4,
+            }}
+            className="font-black text-[2rem] leading-none my-10 lg:text-[4rem] text-slate-900"
+          >
             Solutions Tailored to your Business needs
-          </h1>
-          <p className="text-m text-slate-600 lg:text-xl">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              type: "tween",
+              duration: 1,
+              ease: "easeInOut",
+              delay: 0.8,
+            }}
+            className="text-m text-slate-600 lg:text-xl"
+          >
             We leverage cutting-edge technology and creative strategy to drive
             growth and efficiency for your organization
-          </p>
+          </motion.p>
         </div>
       </div>
 

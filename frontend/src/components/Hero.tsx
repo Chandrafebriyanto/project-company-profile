@@ -12,6 +12,7 @@ function Hero() {
             duration: 1,
             ease: "easeInOut",
           }}
+          viewport={{ once: true }} 
           className="flex items-center gap-1 bg-primary/20 px-3 py-1 rounded-full border border-slate-200 w-max mb-4"
         >
           <span className="relative inline-flex h-2 w-2 rounded-full bg-primary"></span>
@@ -29,6 +30,7 @@ function Hero() {
             delay: 0,
             ease: "easeInOut",
           }}
+          viewport={{ once: true }} 
           className="mb-6 text-4xl font-black leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl"
         >
           Strategic Branding for{" "}
@@ -43,6 +45,7 @@ function Hero() {
             delay: 0.2,
             ease: "easeInOut",
           }}
+          viewport={{ once: true }} 
           className="mb-8 max-w-2xl text-lg leading-relaxed text-slate-600 lg:mx-0 mx-auto"
         >
           We help forward-thinking companies define their identity and connect
@@ -58,6 +61,7 @@ function Hero() {
             delay: 0.4,
             ease: "easeInOut",
           }}
+          viewport={{ once: true }} 
           className="flex flex-col items-center gap-4 sm:flex-row lg:justify-start justify-center"
         >
           <button className="group relative flex h-12 min-w-[160px] items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary px-8 text-base font-bold text-white shadow-lg shadow-blue-500/25 transition-all hover:bg-blue-700 hover:shadow-blue-500/40 active:scale-95">
@@ -82,6 +86,7 @@ function Hero() {
             duration: 1,
             ease: "easeInOut",
           }}
+          viewport={{ once: true }} 
           className="mt-10 flex flex-col items-center gap-4 border-t border-slate-200 pt-8 lg:flex-row lg:items-center"
         >
           <div className="flex -space-x-3">
@@ -125,6 +130,7 @@ function Hero() {
             delay: 0.4,
             ease: "easeInOut",
           }}
+          viewport={{ once: true }} 
           className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-2xl shadow-slate-200/50 bg-slate-200"
         >
           <img

@@ -11,7 +11,7 @@ function Testimonial() {
         duration: 0.8,
         ease: "easeOut",
         delay: i * 0.3, 
-      },
+      } as const,
     }),
     hover: {
       y: -10,

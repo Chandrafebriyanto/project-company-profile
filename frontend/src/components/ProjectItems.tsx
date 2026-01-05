@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 function ProjectItems() {
   return (
     <>
@@ -39,7 +41,13 @@ function ProjectItems() {
 
         <div className="grid md:grid-cols-3 grid-cols-1 md:gap-10 gap-5 md:px-20 px-5">
           {/* project 1 */}
-          <div className="flex flex-col gap-2">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="flex flex-col gap-2"
+          >
             <div className="group aspect-[4/3] w-full rounded-xl bg-slate-100  relative overflow-hidden border border-slate-200 ">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-100 group-hover:scale-105 transition-transform duration-500"></div>
               <div className="absolute inset-0 flex items-center justify-center text-primary/20 group-hover:text-primary/30 transition-colors">
@@ -59,9 +67,15 @@ function ProjectItems() {
               Complete visual identity overhaul for a leading financial services
               provider.
             </p>
-          </div>
+          </motion.div>
           {/* project 2 */}
-          <div className="flex flex-col gap-2">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2}}
+            className="flex flex-col gap-2"
+          >
             <div className="group aspect-[4/3] w-full rounded-xl bg-slate-100  relative overflow-hidden border border-slate-200 ">
               <div className="absolute inset-0 bg-gradient-to-br from-emerald-50 to-teal-100 group-hover:scale-105 transition-transform duration-500"></div>
               <div className="absolute inset-0 flex items-center justify-center text-emerald-500/20 group-hover:text-emerald-500/30 transition-colors">
@@ -80,9 +94,15 @@ function ProjectItems() {
             <p className="text-sm text-slate-600">
               Mobile application development for sustainable energy monitoring.
             </p>
-          </div>
+          </motion.div>
           {/* project 3 */}
-          <div className="flex flex-col gap-2">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.4}}
+            className="flex flex-col gap-2"
+          >
             <div className="group aspect-[4/3] w-full rounded-xl bg-slate-100  relative overflow-hidden border border-slate-200 ">
               <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-fuchsia-100 group-hover:scale-105 transition-transform duration-500"></div>
               <div className="absolute inset-0 flex items-center justify-center text-purple-500/20 group-hover:text-purple-500/30 transition-colors">
@@ -101,9 +121,15 @@ function ProjectItems() {
             <p className="text-sm text-slate-600">
               High-performance custom storefront for a global fashion retailer.
             </p>
-          </div>
+          </motion.div>
           {/* project 4 */}
-          <div className="flex flex-col gap-2">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5}}
+            className="flex flex-col gap-2"
+          >
             <div className="group aspect-[4/3] w-full rounded-xl bg-slate-100  relative overflow-hidden border border-slate-200 ">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-amber-100 group-hover:scale-105 transition-transform duration-500"></div>
               <div className="absolute inset-0 flex items-center justify-center text-orange-500/20 group-hover:text-orange-500/30 transition-colors">
@@ -122,9 +148,15 @@ function ProjectItems() {
             <p className="text-sm text-slate-600">
               Strategic digital marketing campaign resulting in 300% ROI.
             </p>
-          </div>
+          </motion.div>
           {/* project 5 */}
-          <div className="flex flex-col gap-2">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2}}
+            className="flex flex-col gap-2"
+          >
             <div className="group aspect-[4/3] w-full rounded-xl bg-slate-100  relative overflow-hidden border border-slate-200 ">
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-sky-100 group-hover:scale-105 transition-transform duration-500"></div>
               <div className="absolute inset-0 flex items-center justify-center text-cyan-500/20 group-hover:text-cyan-500/30 transition-colors">
@@ -143,9 +175,15 @@ function ProjectItems() {
             <p className="text-sm text-slate-600">
               UX/UI design for an enterprise-level cloud management platform.
             </p>
-          </div>
+          </motion.div>
           {/* project 6 */}
-          <div className="flex flex-col gap-2">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.4}}
+            className="flex flex-col gap-2"
+          >
             <div className="group aspect-[4/3] w-full rounded-xl bg-slate-100  relative overflow-hidden border border-slate-200 ">
               <div className="absolute inset-0 bg-gradient-to-br from-rose-50 to-pink-100 group-hover:scale-105 transition-transform duration-500"></div>
               <div className="absolute inset-0 flex items-center justify-center text-rose-500/20 group-hover:text-rose-500/30 transition-colors">
@@ -164,7 +202,7 @@ function ProjectItems() {
             <p className="text-sm text-slate-600">
               Full-scale video production for a national television spot.
             </p>
-          </div>
+          </motion.div>
         </div>
 
         <div className="mt-10 items-center justify-center flex">
