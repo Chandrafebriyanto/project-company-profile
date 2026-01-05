@@ -1,24 +1,65 @@
+import { motion } from "motion/react";
+
 function Hero() {
   return (
     <section className="h-full items-center flex my-20 px-[min(3rem,5%)] gap-10 lg:flex-row flex-col">
       <div>
-        <div className="flex items-center gap-1 bg-primary/20 px-3 py-1 rounded-full border border-slate-200 w-max mb-4">
+        <motion.div
+          initial={{ opacity: 0, y: -200 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "tween",
+            duration: 1,
+            ease: "easeInOut",
+          }}
+          className="flex items-center gap-1 bg-primary/20 px-3 py-1 rounded-full border border-slate-200 w-max mb-4"
+        >
           <span className="relative inline-flex h-2 w-2 rounded-full bg-primary"></span>
           <p className="text-primary text-sm font-bold">
             {" "}
             Top Rated Agency 2025
           </p>
-        </div>
-        <h1 className="mb-6 text-4xl font-black leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+        </motion.div>
+        <motion.h1
+          initial={{ opacity: 0, x: -200 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            type: "tween",
+            duration: 1,
+            delay: 0,
+            ease: "easeInOut",
+          }}
+          className="mb-6 text-4xl font-black leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl"
+        >
           Strategic Branding for{" "}
           <span className="text-primary">Modern Business</span>
-        </h1>
-        <p className="mb-8 max-w-2xl text-lg leading-relaxed text-slate-600 lg:mx-0 mx-auto">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, x: -200 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            type: "tween",
+            duration: 1,
+            delay: 0.2,
+            ease: "easeInOut",
+          }}
+          className="mb-8 max-w-2xl text-lg leading-relaxed text-slate-600 lg:mx-0 mx-auto"
+        >
           We help forward-thinking companies define their identity and connect
           with their audience through innovative design, digital strategy, and
           creative storytelling.
-        </p>
-        <div className="flex flex-col items-center gap-4 sm:flex-row lg:justify-start justify-center">
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0, x: -200 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            type: "tween",
+            duration: 1,
+            delay: 0.4,
+            ease: "easeInOut",
+          }}
+          className="flex flex-col items-center gap-4 sm:flex-row lg:justify-start justify-center"
+        >
           <button className="group relative flex h-12 min-w-[160px] items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary px-8 text-base font-bold text-white shadow-lg shadow-blue-500/25 transition-all hover:bg-blue-700 hover:shadow-blue-500/40 active:scale-95">
             <span>Hubungi Kami</span>
             <span className="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">
@@ -31,9 +72,18 @@ function Hero() {
             </span>
             <span>Watch Video</span>
           </button>
-        </div>
+        </motion.div>
 
-        <div className="mt-10 flex flex-col items-center gap-4 border-t border-slate-200 pt-8 lg:flex-row lg:items-center">
+        <motion.div
+          initial={{ opacity: 0, y: 200 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "tween",
+            duration: 1,
+            ease: "easeInOut",
+          }}
+          className="mt-10 flex flex-col items-center gap-4 border-t border-slate-200 pt-8 lg:flex-row lg:items-center"
+        >
           <div className="flex -space-x-3">
             <img
               alt="Portrait of a satisfied client"
@@ -62,11 +112,21 @@ function Hero() {
             <span className="font-bold text-slate-900 ">500+ companies</span>{" "}
             worldwide.
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div className="relative order-1 lg:order-2 w-[100%] lg:w-1/2 flex-shrink-0">
-        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-2xl shadow-slate-200/50 bg-slate-200">
+        <motion.div
+          initial={{ opacity: 0, x: 200 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            type: "tween",
+            duration: 1,
+            delay: 0.4,
+            ease: "easeInOut",
+          }}
+          className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-2xl shadow-slate-200/50 bg-slate-200"
+        >
           <img
             alt="Modern office team collaborating on a branding project"
             className="h-full w-full object-cover"
@@ -89,7 +149,7 @@ function Hero() {
               <div className="h-1.5 w-[75%] rounded-full bg-green-500"></div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

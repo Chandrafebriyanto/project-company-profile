@@ -1,13 +1,41 @@
+import { motion, type Variants } from "motion/react";
+
 function Testimonial() {
+  const cardMotionVariants: Variants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "tween",
+        duration: 0.8,
+        ease: "easeOut",
+        delay: i * 0.3, 
+      },
+    }),
+    hover: {
+      y: -10,
+      transition: {ease: "easeInOut" },
+    },
+  };
+
   return (
     <>
-      <div className="flex justify-between px-[min(3rem,5%)] py-10 items-center">
+      <div className="flex justify-between px-[min(3rem,5%)] py-10 items-center text-center">
         <h1 className="font-bold text-xl md:text-2xl">What Our Clients Say</h1>
       </div>
 
-      <div className="flex gap-6 overflow-auto px-5 lg:px-10 pb-10">
-        {/* */}
-        <div className="group snap-start min-w-[320px] md:min-w-[380px] flex-1 bg-white p-8 rounded-xl border border-slate-100 shadow-sm flex flex-col justify-between gap-6 relative overflow-hidden group hover:shadow-xl hover:-translate-y-2 transition-all">
+      <div className="flex gap-6 overflow-auto px-5 lg:px-10 pb-10 snap-x scrollbar-hide">
+        {/* Card 1 */}
+        <motion.div
+          custom={0} 
+          initial="hidden"
+          whileInView="visible"
+          whileHover="hover"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={cardMotionVariants}
+          className="group snap-start min-w-[320px] md:min-w-[380px] flex-1 bg-white p-8 rounded-xl border border-slate-100 shadow-sm flex flex-col justify-between gap-6 relative overflow-hidden hover:shadow-xl"
+        >
           <div className="absolute top-0 right-0 p-6 opacity-10 text-primary">
             <span className="material-symbols-outlined text-8xl leading-none">
               format_quote
@@ -15,21 +43,11 @@ function Testimonial() {
           </div>
           <div className="relative z-10">
             <div className="flex text-yellow-400 mb-4">
-              <span className="material-symbols-outlined text-sm fill-current">
-                star
-              </span>
-              <span className="material-symbols-outlined text-sm fill-current">
-                star
-              </span>
-              <span className="material-symbols-outlined text-sm fill-current">
-                star
-              </span>
-              <span className="material-symbols-outlined text-sm fill-current">
-                star
-              </span>
-              <span className="material-symbols-outlined text-sm fill-current">
-                star
-              </span>
+              <span className="material-symbols-outlined text-sm fill-current">star</span>
+              <span className="material-symbols-outlined text-sm fill-current">star</span>
+              <span className="material-symbols-outlined text-sm fill-current">star</span>
+              <span className="material-symbols-outlined text-sm fill-current">star</span>
+              <span className="material-symbols-outlined text-sm fill-current">star</span>
             </div>
             <p className="text-slate-700 text-lg leading-relaxed font-medium">
               "The team transformed our digital presence completely. Their
@@ -64,10 +82,18 @@ function Testimonial() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        {/* */}
-        <div className="group snap-start min-w-[320px] md:min-w-[380px] flex-1 bg-white p-8 rounded-xl border border-slate-100 shadow-sm flex flex-col justify-between gap-6 relative overflow-hidden group hover:shadow-xl hover:-translate-y-2 transition-all">
+        {/* Card 2 */}
+        <motion.div
+          custom={1} 
+          initial="hidden"
+          whileInView="visible"
+          whileHover="hover"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={cardMotionVariants}
+          className="group snap-start min-w-[320px] md:min-w-[380px] flex-1 bg-white p-8 rounded-xl border border-slate-100 shadow-sm flex flex-col justify-between gap-6 relative overflow-hidden hover:shadow-xl"
+        >
           <div className="absolute top-0 right-0 p-6 opacity-10 text-primary">
             <span className="material-symbols-outlined text-8xl leading-none">
               format_quote
@@ -75,21 +101,11 @@ function Testimonial() {
           </div>
           <div className="relative z-10">
             <div className="flex text-yellow-400 mb-4">
-              <span className="material-symbols-outlined text-sm fill-current">
-                star
-              </span>
-              <span className="material-symbols-outlined text-sm fill-current">
-                star
-              </span>
-              <span className="material-symbols-outlined text-sm fill-current">
-                star
-              </span>
-              <span className="material-symbols-outlined text-sm fill-current">
-                star
-              </span>
-              <span className="material-symbols-outlined text-sm fill-current">
-                star
-              </span>
+              <span className="material-symbols-outlined text-sm fill-current">star</span>
+              <span className="material-symbols-outlined text-sm fill-current">star</span>
+              <span className="material-symbols-outlined text-sm fill-current">star</span>
+              <span className="material-symbols-outlined text-sm fill-current">star</span>
+              <span className="material-symbols-outlined text-sm fill-current">star</span>
             </div>
             <p className="text-slate-700 text-lg leading-relaxed font-medium">
               "Exceptional quality and dedication to the project goals. They
@@ -123,10 +139,18 @@ function Testimonial() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        {/* */}
-        <div className="group snap-start min-w-[320px] md:min-w-[380px] flex-1 bg-white p-8 rounded-xl border border-slate-100 shadow-sm flex flex-col justify-between gap-6 relative overflow-hidden group hover:shadow-xl hover:-translate-y-2 transition-all">
+        {/* Card 3*/}
+        <motion.div
+          custom={2}
+          initial="hidden"
+          whileInView="visible"
+          whileHover="hover"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={cardMotionVariants}
+          className="group snap-start min-w-[320px] md:min-w-[380px] flex-1 bg-white p-8 rounded-xl border border-slate-100 shadow-sm flex flex-col justify-between gap-6 relative overflow-hidden hover:shadow-xl"
+        >
           <div className="absolute top-0 right-0 p-6 opacity-10 text-primary">
             <span className="material-symbols-outlined text-8xl leading-none">
               format_quote
@@ -134,21 +158,11 @@ function Testimonial() {
           </div>
           <div className="relative z-10">
             <div className="flex text-yellow-400 mb-4">
-              <span className="material-symbols-outlined text-sm fill-current">
-                star
-              </span>
-              <span className="material-symbols-outlined text-sm fill-current">
-                star
-              </span>
-              <span className="material-symbols-outlined text-sm fill-current">
-                star
-              </span>
-              <span className="material-symbols-outlined text-sm fill-current">
-                star
-              </span>
-              <span className="material-symbols-outlined text-sm fill-current">
-                star
-              </span>
+              <span className="material-symbols-outlined text-sm fill-current">star</span>
+              <span className="material-symbols-outlined text-sm fill-current">star</span>
+              <span className="material-symbols-outlined text-sm fill-current">star</span>
+              <span className="material-symbols-outlined text-sm fill-current">star</span>
+              <span className="material-symbols-outlined text-sm fill-current">star</span>
             </div>
             <p className="text-slate-700 :text-slate-300 text-lg leading-relaxed font-medium">
               "A trustworthy partner that consistently delivers top-tier
@@ -182,7 +196,7 @@ function Testimonial() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );
