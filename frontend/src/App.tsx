@@ -4,6 +4,8 @@ import LoadingSpinner from "./components/LoadingSpinner";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import NotFound from "./NotFound";
+
 
 const Home = lazy(() => import("./Home"));
 const About = lazy(() => import("./About"));
@@ -23,6 +25,7 @@ function App() {
           <Route path="/Services" element={<Services />} />
           <Route path="/Portofolio" element={<Portofolio />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
       {/* ROUTES */}
