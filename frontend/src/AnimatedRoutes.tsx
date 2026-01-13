@@ -15,7 +15,6 @@ const AnimatedRoutes = () => {
   const location = useLocation();
 
   return (
-    // mode="wait" artinya: tunggu halaman lama keluar dulu, baru halaman baru masuk
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route
