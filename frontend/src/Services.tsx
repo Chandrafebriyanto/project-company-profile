@@ -52,7 +52,13 @@ function Services() {
       {/* CTA */}
       <section className="py-16 sm:py-24 bg-background-light">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="overflow-hidden rounded-2xl bg-white  shadow-xl ring-1 ring-slate-900/5 ">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.3 }}
+            className="overflow-hidden rounded-2xl bg-white  shadow-xl ring-1 ring-slate-900/5 "
+          >
             <div className="flex flex-col items-center justify-center gap-6 px-6 py-12 text-center sm:px-12 sm:py-16">
               <h2 className="max-w-2xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
                 Ready to start your project?
@@ -74,7 +80,7 @@ function Services() {
                 </Link>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>
