@@ -42,7 +42,7 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/Portofolio"
+          path="/Portfolio"
           element={
             <PageTransition>
               <Portofolio />
@@ -57,7 +57,14 @@ const AnimatedRoutes = () => {
             </PageTransition>
           }
         />
-        <Route path="*" element={<NotFound />} />
+        <Route
+          path="*"
+          element={
+            <PageTransition>
+              <NotFound />
+            </PageTransition>
+          }
+        />
       </Routes>
     </AnimatePresence>
   );

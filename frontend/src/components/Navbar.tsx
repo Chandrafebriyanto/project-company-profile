@@ -38,10 +38,10 @@ function Navbar() {
             Services
           </Link>
           <Link
-            to="/portofolio"
+            to="/portfolio"
             className="text-slate-900 hover:text-blue-700 text-sm font-medium duration-300"
           >
-            Portofolio
+            Portfolio
           </Link>
           <Link
             to="/contact"

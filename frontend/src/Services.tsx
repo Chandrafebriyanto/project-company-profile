@@ -69,7 +69,7 @@ function Services() {
               </p>
               <div className="mt-4 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
                 <Link to="/contact">
-                  <button className="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-base font-bold text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-colors">
+                  <button className="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-base font-bold text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 hover:bg-blue-800 hover:scale-105 transition-all">
                     Get a Quote
                   </button>
                 </Link>

@@ -49,10 +49,10 @@ function Footer() {
               Services
             </Link>
             <Link
-              to="/contact"
+              to="/portfolio"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
-              Contact
+              Portfolio
             </Link>
           </div>
 
