@@ -92,11 +92,11 @@ function Navbar() {
             Services
           </Link>
           <Link
-            to="/portofolio"
+            to="/portfolio"
             className="text-slate-900 hover:text-blue-700 font-medium hover:pl-2 duration-300"
             onClick={() => setIsOpen(false)}
           >
-            Portofolio
+            Portfolio
           </Link>
           <Link
             to="/contact"

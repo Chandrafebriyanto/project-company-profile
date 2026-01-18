@@ -2,14 +2,28 @@ import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 
 function ServicesItem() {
+
+  // animated service items
+  const cardVariants = {
+    hidden: { opacity: 0, scale: 0.5 },
+    visible: (i: number) => ({
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.5, delay: i * 0.2 },
+    }),
+  };
+
+
   return (
     <>
       <div className="bg-white">
         <div className="grid grid-cols-1 gap-8 px-[min(3rem,5%)] py-20 md:grid-cols-3 sm:grid-cols-2">
           {/* Service Item 1 */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            custom={0}
+            initial="hidden"
+            whileInView="visible"
+            variants={cardVariants}
             viewport={{ once: true }}
             className="group px-6 py-7 border-2 border-slate-300 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
           >
@@ -35,10 +49,11 @@ function ServicesItem() {
 
           {/* Service Item 2 */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            custom={1}
+            initial="hidden"
+            whileInView="visible"
+            variants={cardVariants}
             viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
             className="group px-6 py-7 border-2 border-slate-300 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
           >
             <div className="mb-6 inline-flex size-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
@@ -61,10 +76,11 @@ function ServicesItem() {
 
           {/* Service Item 3 */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            custom={2}
+            initial="hidden"
+            whileInView="visible"
+            variants={cardVariants}
             viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
             className="group px-6 py-7 border-2 border-slate-300 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
           >
             <div className="mb-6 inline-flex size-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
@@ -89,10 +105,11 @@ function ServicesItem() {
 
           {/* Service Item 4 */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            custom={0}
+            initial="hidden"
+            whileInView="visible"
+            variants={cardVariants}
             viewport={{ once: true }}
-            transition={{ delay: 0.6 }}
             className="group px-6 py-7 border-2 border-slate-300 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
           >
             <div className="mb-6 inline-flex size-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
@@ -117,10 +134,11 @@ function ServicesItem() {
 
           {/* Service Item 5 */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            custom={1}
+            initial="hidden"
+            whileInView="visible"
+            variants={cardVariants}
             viewport={{ once: true }}
-            transition={{ delay: 0.8 }}
             className="group px-6 py-7 border-2 border-slate-300 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
           >
             <div className="mb-6 inline-flex size-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
@@ -143,10 +161,11 @@ function ServicesItem() {
 
           {/* Service Item 6 */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            custom={2}
+            initial="hidden"
+            whileInView="visible"
+            variants={cardVariants}
             viewport={{ once: true }}
-            transition={{ delay: 1 }}
             className="group px-6 py-7 border-2 border-slate-300 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
           >
             <div className="mb-6 inline-flex size-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">

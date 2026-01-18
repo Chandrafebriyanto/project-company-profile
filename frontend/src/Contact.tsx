@@ -3,12 +3,12 @@ import { motion } from "motion/react";
 function Contact() {
   return (
     <>
-      <div className="bg-background-light py-10">
+      <div className="bg-background-light md:px-20">
         <motion.div
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "tween", duration: 1, ease: "easeInOut" }}
-          className="text-center justify-items-center md:py-18 py-7 px-5 w-max-[900px] mx-auto md:w-[500px] lg:w-[900px]"
+          className="text-center justify-items-center md:py-18 py-2 px-5 w-max-[900px] mx-auto md:w-[500px] lg:w-[900px]"
         >
           <h1 className="font-black leading-none lg:my-5 md:my-4 my-3 lg:text-6xl md:text-4xl text-2xl text-slate-900">
             Let's Start a Conversation
@@ -18,7 +18,7 @@ function Contact() {
             work together
           </p>
         </motion.div>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-5 px-10">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-5 px-10 pb-10">
           <div className="flex flex-col md:gap-5 gap-3">
             <motion.div
               initial={{ opacity: 0, x: -200 }}
@@ -109,12 +109,14 @@ function Contact() {
                 ease: "easeInOut",
                 delay: 0.8,
               }}
-              className="bg-green-400 rounded-lg py-4 flex justify-center gap-2 items-center"
+              className="bg-green-400 rounded-lg py-4 flex justify-center gap-2 items-center hover:bg-green-500 transition-all hover:shadow-lg"
             >
               <span className="material-symbols-outlined text-2xl text-white">
                 chat
               </span>
-              <h1 className="font-semibold text-white">Chat on WhatsApp</h1>
+              <a href="https://wa.me/6285695461123">
+                <h1 className="font-semibold text-white">Chat on WhatsApp</h1>
+              </a>
             </motion.button>
             <motion.p
               initial={{ opacity: 0, y: 200 }}
@@ -151,7 +153,6 @@ function Contact() {
                   <input
                     className="w-full h-12 rounded-lg border-2 border-slate-300  bg-white  px-4 text-base text-slate-900 placeholder-slate-400 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                     placeholder="Jane Doe"
-                    // required=""
                     type="text"
                   />
                 </label>
@@ -162,7 +163,6 @@ function Contact() {
                   <input
                     className="w-full h-12 rounded-lg border-2 border-slate-300  bg-white px-4 text-base text-slate-900 placeholder-slate-400 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                     placeholder="jane@example.com"
-                    // required=""
                     type="email"
                   />
                 </label>
@@ -185,11 +185,10 @@ function Contact() {
                 <textarea
                   className="w-full min-h-[160px] rounded-lg border-2 border-slate-300  bg-white p-4 text-base text-slate-900 placeholder-slate-400 focus:border-primary focus:ring-1 focus:ring-primary outline-none resize-y transition-all"
                   placeholder="Tell us about your project..."
-                  // required=""
                 ></textarea>
               </label>
               <button
-                className="w-full md:w-auto min-w-[160px] h-12 bg-primary hover:bg-primary-hover text-white font-bold rounded-lg px-8 transition-colors flex items-center justify-center gap-2"
+                className="w-full md:w-auto min-w-[160px] h-12 bg-primary hover:bg-blue-800 hover:shadow-lg text-white font-bold rounded-lg px-8 transition-colors flex items-center justify-center gap-2"
                 type="submit"
               >
                 <span>Send Message</span>
