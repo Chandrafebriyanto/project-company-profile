@@ -1,0 +1,14 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "title": "Build Your Digital Future",
+    "subtitle": "We provide the best solution for your business growth.",
+    "cta": "Get Started"
+  }
+}

@@ -1,7 +1,14 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = () => {
+    const newLang = i18n.language === "en" ? "id" : "en";
+    i18n.changeLanguage(newLang);
+  };
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -23,31 +30,39 @@ function Navbar() {
             to="/"
             className="text-slate-900 hover:text-blue-700 text-sm font-medium duration-300"
           >
-            Home
+            {t("navbar.home")}
           </Link>
           <Link
             to="/about"
             className="text-slate-900 hover:text-blue-700 text-sm font-medium duration-300"
           >
-            About
+            {t("navbar.about")}
           </Link>
           <Link
             to="/services"
             className="text-slate-900 hover:text-blue-700 text-sm font-medium duration-300"
           >
-            Services
+            {t("navbar.services")}
           </Link>
           <Link
             to="/portfolio"
             className="text-slate-900 hover:text-blue-700 text-sm font-medium duration-300"
           >
-            Portfolio
+            {t("navbar.portfolio")}
           </Link>
+
+          <button
+            onClick={changeLanguage}
+            className="text-sm font-bold text-slate-600 hover:text-blue-700 border px-2 py-1 rounded hover:bg-slate-50 transition-colors"
+          >
+            {i18n.language === "en" ? "ID" : "EN"}
+          </button>
+
           <Link
             to="/contact"
             className="text-sm bg-blue-700 rounded-lg text-white px-4 py-2 font-medium hover:bg-blue-800 transition-colors"
           >
-            Get Started
+            {t("hero.cta")}
           </Link>
         </nav>
 
@@ -70,40 +85,46 @@ function Navbar() {
         }`}
       >
         <div className="flex flex-col gap-4 p-6">
+          <button
+            onClick={changeLanguage}
+            className="text-sm font-bold text-slate-600 border px-2 py-1 rounded"
+          >
+            {i18n.language === "en" ? "ID" : "EN"}
+          </button>
           <Link
             to="/"
             className="text-slate-900 hover:text-blue-700 font-medium hover:pl-2 duration-300"
             onClick={() => setIsOpen(false)}
           >
-            Home
+            {t("navbar.home")}
           </Link>
           <Link
             to="/about"
             className="text-slate-900 hover:text-blue-700 font-medium hover:pl-2 duration-300"
             onClick={() => setIsOpen(false)}
           >
-            About
+            {t("navbar.about")}
           </Link>
           <Link
             to="/services"
             className="text-slate-900 hover:text-blue-700 font-medium hover:pl-2 duration-300"
             onClick={() => setIsOpen(false)}
           >
-            Services
+            {t("navbar.services")}
           </Link>
           <Link
             to="/portfolio"
             className="text-slate-900 hover:text-blue-700 font-medium hover:pl-2 duration-300"
             onClick={() => setIsOpen(false)}
           >
-            Portfolio
+            {t("navbar.portfolio")}
           </Link>
           <Link
             to="/contact"
             className="bg-blue-700 text-white text-center py-3 rounded-lg font-medium hover:bg-blue-800"
             onClick={() => setIsOpen(false)}
           >
-            Get Started
+            {t("hero.cta")}
           </Link>
         </div>
       </div>

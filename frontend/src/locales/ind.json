@@ -1,0 +1,14 @@
+{
+  "navbar": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "services": "Layanan",
+    "portfolio": "Portofolio",
+    "contact": "Hubungi Kami"
+  },
+  "hero": {
+    "title": "Bangun Masa Depan Digitalmu",
+    "subtitle": "Kami menyediakan solusi terbaik untuk pertumbuhan bisnis Anda.",
+    "cta": "Mulai Sekarang"
+  }
+}

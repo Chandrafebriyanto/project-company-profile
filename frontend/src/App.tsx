@@ -1,7 +1,7 @@
 import { BrowserRouter as Router } from "react-router-dom";
-// import { Suspense, lazy } from "react";
 import { Suspense } from "react";
 import LoadingSpinner from "./components/LoadingSpinner";
+// import PageSkeleton from "./components/PageSkeleton";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
