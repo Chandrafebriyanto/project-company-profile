@@ -51,19 +51,19 @@ function Navbar() {
             {t("navbar.portfolio")}
           </Link>
 
+          <Link
+            to="/contact"
+            className="text-sm bg-blue-700 rounded-lg text-white px-4 py-2 font-medium hover:bg-blue-800 transition-colors"
+          >
+            {t("navbar.cta")}
+          </Link>
+          
           <button
             onClick={changeLanguage}
             className="text-sm font-bold text-slate-600 hover:text-blue-700 border px-2 py-1 rounded hover:bg-slate-50 transition-colors"
           >
             {i18n.language === "en" ? "ID" : "EN"}
           </button>
-
-          <Link
-            to="/contact"
-            className="text-sm bg-blue-700 rounded-lg text-white px-4 py-2 font-medium hover:bg-blue-800 transition-colors"
-          >
-            {t("hero.cta")}
-          </Link>
         </nav>
 
         {/* MOBILE MENU BUTTON */}
@@ -124,7 +124,7 @@ function Navbar() {
             className="bg-blue-700 text-white text-center py-3 rounded-lg font-medium hover:bg-blue-800"
             onClick={() => setIsOpen(false)}
           >
-            {t("hero.cta")}
+            {t("navbar.cta")}
           </Link>
         </div>
       </div>

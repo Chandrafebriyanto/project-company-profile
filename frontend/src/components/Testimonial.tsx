@@ -1,4 +1,5 @@
 import { motion, type Variants } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 function Testimonial() {
   const cardMotionVariants: Variants = {
@@ -19,10 +20,12 @@ function Testimonial() {
     },
   };
 
+  const {t} = useTranslation();
+
   return (
     <>
       <div className="flex justify-between px-[min(3rem,5%)] py-10 items-center text-center">
-        <h1 className="font-bold text-xl md:text-2xl">What Our Clients Say</h1>
+        <h1 className="font-bold text-xl md:text-2xl">{t("testimonial.title")}</h1>
       </div>
 
       <div className="flex gap-6 overflow-auto px-5 lg:px-10 pb-10 snap-x scrollbar-hide">
@@ -50,9 +53,7 @@ function Testimonial() {
               <span className="material-symbols-outlined text-sm fill-current">star</span>
             </div>
             <p className="text-slate-700 text-lg leading-relaxed font-medium">
-              "The team transformed our digital presence completely. Their
-              attention to detail and commitment to quality is unmatched in the
-              industry."
+              "{t("testimonial.review1")}"
             </p>
           </div>
           <div className="flex items-center gap-4 relative z-10 pt-4 border-t border-slate-100">
@@ -108,8 +109,7 @@ function Testimonial() {
               <span className="material-symbols-outlined text-sm fill-current">star</span>
             </div>
             <p className="text-slate-700 text-lg leading-relaxed font-medium">
-              "Exceptional quality and dedication to the project goals. They
-              delivered on time and exceeded all our expectations."
+              "{t("testimonial.review2")}"
             </p>
           </div>
           <div className="flex items-center gap-4 relative z-10 pt-4 border-t border-slate-100">
@@ -165,8 +165,7 @@ function Testimonial() {
               <span className="material-symbols-outlined text-sm fill-current">star</span>
             </div>
             <p className="text-slate-700 :text-slate-300 text-lg leading-relaxed font-medium">
-              "A trustworthy partner that consistently delivers top-tier
-              results. We highly recommend their services to any enterprise."
+              "{t("testimonial.review3")}"
             </p>
           </div>
           <div className="flex items-center gap-4 relative z-10 pt-4 border-t border-slate-100">

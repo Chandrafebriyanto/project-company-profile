@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 function ServicesItem() {
-
   // animated service items
   const cardVariants = {
     hidden: { opacity: 0, scale: 0.5 },
@@ -12,7 +12,7 @@ function ServicesItem() {
       transition: { duration: 0.5, delay: i * 0.2 },
     }),
   };
-
+  const { t } = useTranslation();
 
   return (
     <>
@@ -32,17 +32,18 @@ function ServicesItem() {
                 design_services
               </span>
             </div>
-            <h1 className="font-bold text-xl">Brand Identity</h1>
+            <h1 className="font-bold text-xl">
+              {t("services.items.brand.title")}
+            </h1>
             <p className="text-sm text-slate-600 pt-3 pb-5">
-              Logo design, typography, and visual guidelines to establish your
-              brand's unique voice in the market.
+              {t("services.items.brand.desc")}
             </p>
             <div className="group-hover:translate-x-2 transition-all">
               <Link
                 to="/services/brand-identity"
                 className="text-primary text-sm font-bold cursor-pointer"
               >
-                Learn more <span>&#8594;</span>
+                {t("services.items.learn_more")} <span>&#8594;</span>
               </Link>
             </div>
           </motion.div>
@@ -59,17 +60,18 @@ function ServicesItem() {
             <div className="mb-6 inline-flex size-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
               <span className="material-symbols-outlined text-3xl">code</span>
             </div>
-            <h1 className="font-bold text-xl">Web Development</h1>
+            <h1 className="font-bold text-xl">
+              {t("services.items.web.title")}
+            </h1>
             <p className="text-sm text-slate-600 pt-3 pb-5">
-              Responsive websites and custom web applications built for high
-              performance and scalability.
+              {t("services.items.web.desc")}
             </p>
             <div className="group-hover:translate-x-2 transition-all">
               <Link
                 to="/services/web-development"
                 className="text-primary text-sm font-bold cursor-pointer"
               >
-                Learn more <span>&#8594;</span>
+                {t("services.items.learn_more")} <span>&#8594;</span>
               </Link>
             </div>
           </motion.div>
@@ -88,17 +90,18 @@ function ServicesItem() {
                 campaign
               </span>
             </div>
-            <h1 className="font-bold text-xl">Digital Marketing</h1>
+            <h1 className="font-bold text-xl">
+              {t("services.items.marketing.title")}
+            </h1>
             <p className="text-sm text-slate-600 pt-3 pb-5">
-              SEO, social media strategy, and paid advertising campaigns
-              designed to grow your audience.
+              {t("services.items.marketing.desc")}
             </p>
             <div className="group-hover:translate-x-2 transition-all">
               <Link
                 to="/services/digital-marketing"
                 className="text-primary text-sm font-bold cursor-pointer"
               >
-                Learn more <span>&#8594;</span>
+                {t("services.items.learn_more")} <span>&#8594;</span>
               </Link>
             </div>
           </motion.div>
@@ -117,17 +120,18 @@ function ServicesItem() {
                 trending_up
               </span>
             </div>
-            <h1 className="font-bold text-xl">Business Strategy</h1>
+            <h1 className="font-bold text-xl">
+              {t("services.items.strategy.title")}
+            </h1>
             <p className="text-sm text-slate-600 pt-3 pb-5">
-              Market analysis and growth consulting to guide your business
-              forward with data-driven decisions.
+              {t("services.items.strategy.desc")}
             </p>
             <div className="group-hover:translate-x-2 transition-all">
               <Link
                 to="/services/business-strategy"
                 className="text-primary text-sm font-bold cursor-pointer"
               >
-                Learn more <span>&#8594;</span>
+                {t("services.items.learn_more")} <span>&#8594;</span>
               </Link>
             </div>
           </motion.div>
@@ -144,17 +148,18 @@ function ServicesItem() {
             <div className="mb-6 inline-flex size-14 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
               <span className="material-symbols-outlined text-3xl">cloud</span>
             </div>
-            <h1 className="font-bold text-xl">Cloud Solutions</h1>
+            <h1 className="font-bold text-xl">
+              {t("services.items.cloud.title")}
+            </h1>
             <p className="text-sm text-slate-600 pt-3 pb-5">
-              Secure cloud infrastructure migration and management to ensure
-              your data is always accessible.
+              {t("services.items.cloud.desc")}
             </p>
             <div className="group-hover:translate-x-2 transition-all">
               <Link
                 to="/services/cloud-solutions"
                 className="text-primary text-sm font-bold cursor-pointer"
               >
-                Learn more <span>&#8594;</span>
+                {t("services.items.learn_more")} <span>&#8594;</span>
               </Link>
             </div>
           </motion.div>
@@ -173,17 +178,18 @@ function ServicesItem() {
                 analytics
               </span>
             </div>
-            <h1 className="font-bold text-xl">Analytics &amp; AI</h1>
+            <h1 className="font-bold text-xl">
+              {t("services.items.analytics.title")}
+            </h1>
             <p className="text-sm text-slate-600 pt-3 pb-5">
-              Harness the power of artificial intelligence and advanced
-              analytics to optimize operations.
+              {t("services.items.analytics.desc")}
             </p>
             <div className="group-hover:translate-x-2 transition-all">
               <Link
                 to="/services/analytics-ai"
                 className="text-primary text-sm font-bold cursor-pointer"
               >
-                Learn more <span>&#8594;</span>
+                {t("services.items.learn_more")} <span>&#8594;</span>
               </Link>
             </div>
           </motion.div>

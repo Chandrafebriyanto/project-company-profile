@@ -4,11 +4,107 @@
     "about": "Tentang",
     "services": "Layanan",
     "portfolio": "Portofolio",
-    "contact": "Hubungi Kami"
+    "cta": "Mulai Sekarang"
   },
   "hero": {
-    "title": "Bangun Masa Depan Digitalmu",
-    "subtitle": "Kami menyediakan solusi terbaik untuk pertumbuhan bisnis Anda.",
-    "cta": "Mulai Sekarang"
+    "tittle": "Agensi Peringkat Teratas 2025",
+    "title_main": "Branding Strategis untuk",
+    "title_highlight": "Bisnis Modern",
+    "subtitle": "Kami membantu perusahaan visioner mendefinisikan identitas dan terhubung dengan audiens melalui desain inovatif, strategi digital, dan narasi kreatif.",
+    "cta_primary": "Tonton Video",
+    "cta_secondary": "Hubungi Kami",
+    "client_first": "Dipercaya oleh",
+    "client_second": "+500 Perusahaan",
+    "client": "di seluruh dunia.",
+    "rate": "Tingkat Pertumbuhan"
+  },
+  "testimonial": {
+    "title": "Apa Kata Klien Kami",
+    "review1": "Tim ini mengubah kehadiran digital kami sepenuhnya. Perhatian terhadap detail dan komitmen terhadap kualitas tidak tertandingi.",
+    "review2": "Kualitas luar biasa dan dedikasi terhadap tujuan proyek. Mereka mengirimkan tepat waktu dan melampaui semua harapan kami.",
+    "review3": "Mitra terpercaya yang secara konsisten memberikan hasil tingkat atas. Kami sangat merekomendasikan layanan mereka."
+  },
+  "stats": {
+    "experience": "Tahun Pengalaman",
+    "projects": "Proyek Selesai",
+    "team": "Anggota Tim",
+    "satisfaction": "Kepuasan Klien"
+  },
+  "about": {
+    "title": "Tentang Kami",
+    "subtitle": "Kami adalah tim pengembang, desainer, dan ahli strategi yang bersemangat.",
+    "mission_title": "Misi Kami",
+    "mission_desc": "Memberdayakan bisnis dengan teknologi inovatif.",
+    "vision_title": "Visi Kami",
+    "vision_desc": "Menjadi mitra teknologi global terkemuka."
+  },
+  "services": {
+    "title": "Layanan Kami",
+    "items": {
+      "brand": {
+        "title": "Identitas Brand",
+        "desc": "Desain logo, tipografi, dan panduan visual untuk membangun suara unik brand Anda di pasar."
+      },
+      "web": {
+        "title": "Pengembangan Web",
+        "desc": "Website responsif dan aplikasi web kustom yang dibuat untuk performa tinggi dan skalabilitas."
+      },
+      "marketing": {
+        "title": "Pemasaran Digital",
+        "desc": "SEO, strategi media sosial, dan kampanye iklan berbayar yang dirancang untuk meningkatkan audiens Anda."
+      },
+      "strategy": {
+        "title": "Strategi Bisnis",
+        "desc": "Analisis pasar dan konsultasi pertumbuhan untuk memandu bisnis Anda maju dengan keputusan berbasis data."
+      },
+      "cloud": {
+        "title": "Solusi Cloud",
+        "desc": "Migrasi dan manajemen infrastruktur cloud yang aman untuk memastikan data Anda selalu dapat diakses."
+      },
+      "analytics": {
+        "title": "Analitik & AI",
+        "desc": "Manfaatkan kekuatan kecerdasan buatan dan analitik canggih untuk mengoptimalkan operasional."
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Karya Terbaru Kami",
+    "view_project": "Lihat Proyek"
+  },
+  "team": {
+    "title": "Temui Tim Kami",
+    "roles": {
+      "ceo": "CEO & Pendiri",
+      "cto": "Chief Technology Officer",
+      "designer": "Desainer Utama",
+      "developer": "Pengembang Senior"
+    }
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Punya proyek impian? Mari bicarakan.",
+    "form": {
+      "name": "Nama Lengkap",
+      "email": "Alamat Email",
+      "message": "Pesan Anda",
+      "send": "Kirim Pesan"
+    },
+    "info": {
+      "address": "Jl. Teknologi No. 123, Jakarta Selatan, Indonesia",
+      "phone": "+62 812 3456 7890"
+    }
+  },
+  "footer": {
+    "tittle": "Memberdayakan bisnis dengan strategi inovatif dan solusi digital. Kami mengubah ide menjadi kenyataan.",
+    "company": "PERUSAHAAN",
+    "services": "LAYANAN",
+    "update": "INFO TERBARU",
+    "update_desc": "Berlangganan newsletter kami untuk mendapatkan berita dan informasi terkini.",
+    "mark": " NexGen Corp. Hak cipta dilindungi undang-undang."
+  },
+  "notfound": {
+    "title": "Halaman Tidak Ditemukan",
+    "desc": "Maaf, halaman yang Anda cari tidak ada.",
+    "back": "Kembali ke Beranda"
   }
 }

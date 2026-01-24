@@ -7,6 +7,7 @@ import {
   motion,
 } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const AnimatedNumber = ({
   value,
@@ -30,6 +31,7 @@ const AnimatedNumber = ({
 };
 
 function Portofolio() {
+  const {t} = useTranslation();
   return (
     <>
       <div>
@@ -40,7 +42,7 @@ function Portofolio() {
             transition={{ type: "tween", duration: 1, ease: "easeInOut" }}
             className="text-primary font-bold lg:text-xl md:text-md text-sm"
           >
-            OUR PORTOFOLIO
+            {t("portfolio.title")}
           </motion.p>
 
           <motion.h1
@@ -54,7 +56,7 @@ function Portofolio() {
             }}
             className="font-black leading-none lg:my-5 md:my-4 my-3 lg:text-6xl md:text-4xl text-3xl text-slate-900"
           >
-            Selected & Digital Innovations
+            {t("portfolio.subtitle")}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: -100 }}
@@ -67,8 +69,7 @@ function Portofolio() {
             }}
             className="text-m text-slate-600 lg:text-xl md:text-base text-sm"
           >
-            We leverage cutting-edge technology and creative strategy to drive
-            growth and efficiency for your organization
+            {t("portfolio.desc")}
           </motion.p>
         </div>
         <div className="grid md:grid-cols-3 grid-cols-1 md:gap-10 gap-5 md:px-20 px-24 mb-10">
@@ -86,7 +87,7 @@ function Portofolio() {
               <AnimatedNumber value={10} duration={2} />+
             </h1>
             <p className="font-semibold text-slate-600 md:font-xl text-sm">
-              Years of Experience
+              {t("portfolio.stats.experience")}
             </p>
           </motion.div>
 
@@ -104,7 +105,7 @@ function Portofolio() {
               <AnimatedNumber value={500} duration={2} />+
             </h1>
             <p className="font-semibold text-slate-600 md:font-xl text-sm">
-              Project Delivered
+              {t("portfolio.stats.projects")}
             </p>
           </motion.div>
 
@@ -122,7 +123,7 @@ function Portofolio() {
               <AnimatedNumber value={25} duration={2} />
             </h1>
             <p className="font-semibold text-slate-600 md:font-xl text-sm text-">
-              Global Awards
+              {t("portfolio.stats.awards")}
             </p>
           </motion.div>
         </div>

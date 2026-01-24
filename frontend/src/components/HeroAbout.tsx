@@ -1,6 +1,8 @@
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 function HeroAbout() {
+  const {t} = useTranslation()
   return (
     <>
       <div className="flex flex-col lg:flex-row px-6 lg:px-[min(3rem,5%)] py-10 lg:py-20 gap-10 items-center justify-center bg-white mb-10 lg:mb-32">
@@ -28,7 +30,7 @@ function HeroAbout() {
             }}
             className="text-primary font-bold mb-2 lg:m-4 text-lg"
           >
-            WHO WE ARE
+            {t("about.hero.tittle")}
           </motion.h2>
           <motion.h1
             initial={{ opacity: 0, x: 200 }}
@@ -41,7 +43,7 @@ function HeroAbout() {
             }}
             className="text-4xl lg:text-6xl font-black mb-4 lg:m-4 leading-tight"
           >
-            Building The Future of Tech, Today.
+            {t("about.hero.subtitle")}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, x: 200 }}
@@ -54,10 +56,7 @@ function HeroAbout() {
             }}
             className="text-slate-700 mb-4 lg:m-4 text-base lg:text-lg"
           >
-            Founded in 2015, NexGen Corp began with a simple idea: to make
-            enterprise-grade technology accessible to everyone. We are a
-            dedicated team of innovators, engineers, and strategists committed
-            to delivering excellence.
+            {t("about.hero.desc1")}
           </motion.p>
           <motion.p
             initial={{ opacity: 0, x: 200 }}
@@ -70,8 +69,7 @@ function HeroAbout() {
             }}
             className="text-slate-700 mb-6 lg:m-4 text-base lg:text-lg"
           >
-            Today, we serve thousands of clients worldwide, helping them
-            navigate digital transformation with confidence and clarity.
+            {t("about.hero.desc2")}
           </motion.p>
           <div className="flex gap-4 pt-2 lg:m-4">
             <motion.button
@@ -85,7 +83,7 @@ function HeroAbout() {
               }}
               className="flex items-center justify-center rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold hover:bg-blue-700 transition-colors shadow-sm"
             >
-              Our History
+              {t("about.hero.cta")}
             </motion.button>
           </div>
         </div>

@@ -1,6 +1,8 @@
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 function Team() {
+  const {t} = useTranslation()
   return (
     <>
       <div className="bg-white">
@@ -13,7 +15,7 @@ function Team() {
               viewport={{ once: true }}
               className="text-center text-2xl font-bold mb-4 md:text-3xl"
             >
-              Meet The Leadership
+              {t("about.team.tittle")}
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, x: 200 }}
@@ -22,8 +24,7 @@ function Team() {
               viewport={{ once: true }}
               className="text-center text-slate-600 sm:text-lg px-5 md:px-20"
             >
-              The Passionate people behind NexGen Corp who lead our strategy and
-              culture
+              {t("about.team.desc")}
             </motion.p>
           </div>
           <div className="grid grid-flow-row grid-cols-1 gap-10 px-5 md:grid-cols-4 lg:gap-20 justify-items-center sm:grid-cols-2">
@@ -46,7 +47,7 @@ function Team() {
                 Sarah Jenkins
               </h1>
               <p className="text-center text-primary text-sm lg:text-base">
-                Ceo & Founder
+                {t("about.team.ceo")}
               </p>
             </motion.div>
 
@@ -69,7 +70,7 @@ function Team() {
                 David Chen
               </h1>
               <p className="text-center text-primary text-sm lg:text-base">
-                Chief Technology Officer
+                {t("about.team.cto")}
               </p>
             </motion.div>
 
@@ -92,7 +93,7 @@ function Team() {
                 Elena Rodriguez
               </h1>
               <p className="text-center text-primary text-sm lg:text-base">
-                Creative Director
+                {t("about.team.designer")}
               </p>
             </motion.div>
 
@@ -115,7 +116,7 @@ function Team() {
                 Marcus Johnson
               </h1>
               <p className="text-center text-primary text-sm lg:text-base">
-                VP of Sales
+                {t("about.team.developer")}
               </p>
             </motion.div>
           </div>

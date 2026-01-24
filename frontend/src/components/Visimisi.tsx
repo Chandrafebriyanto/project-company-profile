@@ -1,4 +1,5 @@
 import { motion, type Variants } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 function Visimisi() {
   const cardVariants: Variants = {
@@ -14,6 +15,8 @@ function Visimisi() {
     },
   };
 
+  const {t} = useTranslation()
+
   return (
     <>
       <div className="bg-slate-50 px-6 lg:px-32 py-12 lg:py-28 flex flex-col gap-12">
@@ -25,7 +28,7 @@ function Visimisi() {
             viewport={{ once: true }}
             className="text-2xl lg:text-3xl font-bold mb-2"
           >
-            Vision & Mission
+            {t("about.items.tittle")}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, x: 200 }}
@@ -34,8 +37,7 @@ function Visimisi() {
             viewport={{ once: true }}
             className="text-slate-600 max-w-2xl"
           >
-            Driven purpose and defined by our commitment to integrity and
-            innovation. We don't just build products; we build relationships.
+            {t("about.items.desc")}
           </motion.p>
         </div>
 
@@ -52,10 +54,9 @@ function Visimisi() {
               <span className="material-symbols-outlined">visibility</span>
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="text-lg font-bold leading-tight">Our Vision</h3>
+              <h3 className="text-lg font-bold leading-tight">{t("about.items.vision_title")}</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                To become the global leader in sustainable technology solutions
-                that empower businesses to thrive in a digital world.
+                {t("about.items.vision_desc")}
               </p>
             </div>
           </motion.div>
@@ -72,10 +73,9 @@ function Visimisi() {
               <span className="material-symbols-outlined">track_changes</span>
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="text-lg font-bold leading-tight">Our Mission</h3>
+              <h3 className="text-lg font-bold leading-tight">{t("about.items.mission_title")}</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Delivering excellence through innovative products and
-                customer-centric services that solve real-world problems.
+                {t("about.items.mission_desc")}
               </p>
             </div>
           </motion.div>
@@ -92,10 +92,9 @@ function Visimisi() {
               <span className="material-symbols-outlined">star</span>
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="text-lg font-bold leading-tight">Our Values</h3>
+              <h3 className="text-lg font-bold leading-tight">{t("about.items.value_tittle")}</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Integrity, Innovation, Quality, and Teamwork are at the heart of
-                everything we do.
+                {t("about.items.value_desc")}
               </p>
             </div>
           </motion.div>

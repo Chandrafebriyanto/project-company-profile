@@ -1,6 +1,8 @@
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 function ProjectItems() {
+  const {t} = useTranslation();
   return (
     <>
       <div className="bg-background-light py-10">
@@ -8,32 +10,32 @@ function ProjectItems() {
           <ul className="flex justify-center md:gap-7 gap-3 px-5 mb-10 md:text-base text-xs flex-wrap text-slate-600 font-semibold cursor-pointer">
             <div className="border-2 active:border-primary rounded-full active:shadow-primary/40 active:shadow-md transition-all">
               <li className="py-2 px-5 rounded-full active:bg-primary bg-white active:text-white border-white border-2 transition-all">
-                All Project
+                {t("portfolio.all_projects")}
               </li>
             </div>
             <div className="border-2 active:border-primary rounded-full active:shadow-primary/40 active:shadow-md transition-all">
               <li className="py-2 px-5 rounded-full active:bg-primary bg-white active:text-white border-white border-2 transition-all">
-                Web Design
+                {t("services.items.web.title")}
               </li>
             </div>
             <div className="border-2 active:border-primary rounded-full active:shadow-primary/40 active:shadow-md transition-all">
               <li className="py-2 px-5 rounded-full active:bg-primary bg-white active:text-white border-white border-2 transition-all">
-                Mobile Apps
+                {t("services.items.analytics.title")}
               </li>
             </div>
             <div className="border-2 active:border-primary rounded-full active:shadow-primary/40 active:shadow-md transition-all">
               <li className="py-2 px-5 rounded-full active:bg-primary bg-white active:text-white border-white border-2 transition-all">
-                Branding
+                {t("services.items.brand.title")}
               </li>
             </div>
             <div className="border-2 active:border-primary rounded-full active:shadow-primary/40 active:shadow-md transition-all">
               <li className="py-2 px-5 rounded-full active:bg-primary bg-white active:text-white border-white border-2 transition-all">
-                Marketing
+                {t("services.items.marketing.title")}
               </li>
             </div>
             <div className="border-2 active:border-primary rounded-full active:shadow-primary/40 active:shadow-md transition-all">
               <li className="py-2 px-5 rounded-full active:bg-primary bg-white active:text-white border-white border-2 transition-all">
-                Production
+                {t("services.items.strategy.title")}
               </li>
             </div>
           </ul>
@@ -57,15 +59,14 @@ function ProjectItems() {
               </div>
             </div>
             <div className="flex justify-between">
-              <h1 className="font-bold text-primary text-sm">BRANDING</h1>
+              <h1 className="font-bold text-primary text-sm">{t("portfolio.items.project1.title")}</h1>
               <span className="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors text-xl transform group-hover:translate-x-1 group-hover:-translate-y-1 duration-300">
                 arrow_outward
               </span>
             </div>
-            <h1 className="font-bold text-xl">FinTech Rebrand</h1>
+            <h1 className="font-bold text-xl">{t("portfolio.items.project1.subtitle")}</h1>
             <p className="text-sm text-slate-600">
-              Complete visual identity overhaul for a leading financial services
-              provider.
+              {t("portfolio.items.project1.desc")}
             </p>
           </motion.div>
           {/* project 2 */}
@@ -85,14 +86,14 @@ function ProjectItems() {
               </div>
             </div>
             <div className="flex justify-between">
-              <h1 className="font-bold text-primary text-sm">MOBILE APPS</h1>
+              <h1 className="font-bold text-primary text-sm">{t("portfolio.items.project2.title")}</h1>
               <span className="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors text-xl transform group-hover:translate-x-1 group-hover:-translate-y-1 duration-300">
                 arrow_outward
               </span>
             </div>
-            <h1 className="font-bold text-xl">EcoStream App</h1>
+            <h1 className="font-bold text-xl">{t("portfolio.items.project2.subtitle")}</h1>
             <p className="text-sm text-slate-600">
-              Mobile application development for sustainable energy monitoring.
+              {t("portfolio.items.project2.desc")}
             </p>
           </motion.div>
           {/* project 3 */}
@@ -112,14 +113,14 @@ function ProjectItems() {
               </div>
             </div>
             <div className="flex justify-between">
-              <h1 className="font-bold text-primary text-sm">WEB DESIGN</h1>
+              <h1 className="font-bold text-primary text-sm">{t("portfolio.items.project3.title")}</h1>
               <span className="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors text-xl transform group-hover:translate-x-1 group-hover:-translate-y-1 duration-300">
                 arrow_outward
               </span>
             </div>
-            <h1 className="font-bold text-xl">Shopify Plus Store</h1>
+            <h1 className="font-bold text-xl">{t("portfolio.items.project3.subtitle")}</h1>
             <p className="text-sm text-slate-600">
-              High-performance custom storefront for a global fashion retailer.
+              {t("portfolio.items.project3.desc")}
             </p>
           </motion.div>
           {/* project 4 */}
@@ -139,14 +140,14 @@ function ProjectItems() {
               </div>
             </div>
             <div className="flex justify-between">
-              <h1 className="font-bold text-primary text-sm">MARKETING</h1>
+              <h1 className="font-bold text-primary text-sm">{t("portfolio.items.project3.title")}</h1>
               <span className="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors text-xl transform group-hover:translate-x-1 group-hover:-translate-y-1 duration-300">
                 arrow_outward
               </span>
             </div>
-            <h1 className="font-bold text-xl">Growth Campaign </h1>
+            <h1 className="font-bold text-xl">{t("portfolio.items.project3.subtitle")}</h1>
             <p className="text-sm text-slate-600">
-              Strategic digital marketing campaign resulting in 300% ROI.
+              {t("portfolio.items.project3.desc")}
             </p>
           </motion.div>
           {/* project 5 */}
@@ -166,14 +167,14 @@ function ProjectItems() {
               </div>
             </div>
             <div className="flex justify-between">
-              <h1 className="font-bold text-primary text-sm">WEB DESIGN</h1>
+              <h1 className="font-bold text-primary text-sm">{t("portfolio.items.project4.title")}</h1>
               <span className="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors text-xl transform group-hover:translate-x-1 group-hover:-translate-y-1 duration-300">
                 arrow_outward
               </span>
             </div>
-            <h1 className="font-bold text-xl">Cloud Dashboard</h1>
+            <h1 className="font-bold text-xl">{t("portfolio.items.project4.subtitle")}</h1>
             <p className="text-sm text-slate-600">
-              UX/UI design for an enterprise-level cloud management platform.
+              {t("portfolio.items.project4.desc")}
             </p>
           </motion.div>
           {/* project 6 */}
@@ -193,21 +194,21 @@ function ProjectItems() {
               </div>
             </div>
             <div className="flex justify-between">
-              <h1 className="font-bold text-primary text-sm">PRODUCTION</h1>
+              <h1 className="font-bold text-primary text-sm">{t("portfolio.items.project6.title")}</h1>
               <span className="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors text-xl transform group-hover:translate-x-1 group-hover:-translate-y-1 duration-300">
                 arrow_outward
               </span>
             </div>
-            <h1 className="font-bold text-xl">Brand Commercial</h1>
+            <h1 className="font-bold text-xl">{t("portfolio.items.project6.subtitle")}</h1>
             <p className="text-sm text-slate-600">
-              Full-scale video production for a national television spot.
+              {t("portfolio.items.project6.desc")}
             </p>
           </motion.div>
         </div>
 
         <div className="mt-10 items-center justify-center flex">
           <button className="group relative flex h-12 min-w-[160px] items-center justify-center gap-2 overflow-hidden rounded-lg bg-background-dark px-8 text-base font-bold text-white shadow-lg shadow-blue-500/25 transition-all hover:bg-black/80 hover:shadow-black-500/40 active:scale-95">
-            <span>View All Projects</span>
+            <span>{t("portfolio.view_project")}</span>
             <span className="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">
               arrow_forward
             </span>

@@ -1,6 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const {t} = useTranslation();
   const location = useLocation();
   const bgColor =
     location.pathname === "/about" ? "bg-background-light" : "bg-white";
@@ -22,78 +24,77 @@ function Footer() {
               </h1>
             </div>
             <p className="text-slate-500 text-sm leading-relaxed">
-              Empowering businesses with innovative strategies and digital
-              solutions. We turn ideas into reality.
+              {t("footer.tittle")}
             </p>
           </div>
 
           {/* KOLOM 2: Company Links */}
           <div className="flex flex-col gap-2">
-            <h1 className="font-bold text-lg text-slate-900 mb-2">COMPANY</h1>
+            <h1 className="font-bold text-lg text-slate-900 mb-2">{t("footer.company")}</h1>
             <Link
               to="/"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
-              Home
+              {t("navbar.home")}
             </Link>
             <Link
               to="/about"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
-              About
+              {t("navbar.about")}
             </Link>
             <Link
               to="/services"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
-              Services
+              {t("navbar.services")}
             </Link>
             <Link
               to="/portfolio"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
-              Portfolio
+              {t("navbar.portfolio")}
             </Link>
           </div>
 
           {/* KOLOM 3: Services Links */}
           <div className="flex flex-col gap-2">
-            <h1 className="font-bold text-lg text-slate-900 mb-2">SERVICES</h1>
+            <h1 className="font-bold text-lg text-slate-900 mb-2">{t("footer.services")}</h1>
             <Link
               to="/services/brand-identity"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
-              Brand Identity
+              {t("services.items.brand.title")}
             </Link>
             <Link
               to="/services/web-development"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
-              Web Development
+              {t("services.items.web.title")}
             </Link>
             <Link
               to="/services/digital-marketing"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
-              Digital Marketing
+              {t("services.items.marketing.title")}
             </Link>
             <Link
               to="/services/business-strategy"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
-              Business Strategy
+              {t("services.items.strategy.title")}
             </Link>
             <Link
               to="/services/cloud-solutions"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
-              Cloud Solutions
+              {t("services.items.cloud.title")}
             </Link>
             <Link
               to="/services/analytics-ai"
               className="text-slate-500 hover:text-blue-700 text-sm transition-colors"
             >
-              Analytics & AI
+              {t("services.items.brand.title")}
             </Link>
           </div>
 
@@ -101,10 +102,10 @@ function Footer() {
           <div className="flex flex-col gap-4">
             <div>
               <h1 className="font-bold text-lg text-slate-900 mb-2">
-                STAY UPDATED
+                {t("footer.update")}
               </h1>
               <p className="text-slate-500 text-sm">
-                Subscribe to our newsletter for the latest news and updates.
+                {t("footer.update_desc")}
               </p>
             </div>
             <form action="" className="flex gap-2">
@@ -125,7 +126,7 @@ function Footer() {
 
         <hr className="border-slate-200" />
         <div className="text-center text-slate-500 text-sm py-6 px-4">
-          &copy; {new Date().getFullYear()} NexGen Corp. All rights reserved.
+          &copy; {new Date().getFullYear()} {t("footer.mark")}
         </div>
       </div>
     </>

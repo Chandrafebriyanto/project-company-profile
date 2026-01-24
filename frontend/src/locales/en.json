@@ -4,11 +4,168 @@
     "about": "About",
     "services": "Services",
     "portfolio": "Portfolio",
-    "contact": "Contact Us"
+    "cta": "Get Started"
   },
   "hero": {
-    "title": "Build Your Digital Future",
-    "subtitle": "We provide the best solution for your business growth.",
-    "cta": "Get Started"
+    "tittle": "Top Rated Agency 2025",
+    "title_main": "Strategic Branding for",
+    "title_highlight": "Modern Business",
+    "subtitle": "We help forward-thinking companies define their identity and connect with their audience through innovative design, digital strategy, and creative storytelling.",
+    "cta_primary": "Watch Video",
+    "cta_secondary": "Contact Us",
+    "client_first": "Trusted by",
+    "client_second": "+500 Companies",
+    "client": "worldwide.",
+    "rate": "Growth Rate",
+    "collaboration": "Trusted By Industri Leaders"
+  },
+  "testimonial": {
+    "title": "What Our Clients Say",
+    "review1": "The team transformed our digital presence completely. Their attention to detail and commitment to quality is unmatched.",
+    "review2": "Exceptional quality and dedication to the project goals. They delivered on time and exceeded all our expectations.",
+    "review3": "A trustworthy partner that consistently delivers top-tier results. We highly recommend their services to any enterprise."
+  },
+  "about": {
+    "hero": {
+      "tittle": "WHO WE ARE",
+      "subtitle": "Building The Future of Tech, Today.",
+      "desc1": "Founded in 2015, NexGen Corp began with a simple idea: to make enterprise-grade technology accessible to everyone. We are a dedicated team of innovators, engineers, and strategists committed to delivering excellence.",
+      "desc2": "Today, we serve thousands of clients worldwide, helping them navigate digital transformation with confidence and clarity.",
+      "cta": "Our History"
+    },
+    "stats": {
+      "experience": "Years of Experience",
+      "projects": "Projects Done",
+      "team": "Team Members",
+      "satisfaction": "Client Satisfaction"
+    },
+    "items": {
+      "tittle": "Vision & Mission",
+      "desc": "Driven purpose and defined by our commitment to integrity and innovation. We don't just build products; we build relationships.",
+      "mission_title": "Our Mission",
+      "mission_desc": "Delivering excellence through innovative products and customer-centric services that solve real-world problems.",
+      "vision_title": "Our Vision",
+      "vision_desc": "To become the global leader in sustainable technology solutions that empower businesses to thrive in a digital world.",
+      "value_tittle": "Our Values",
+      "value_desc": "Integrity, Innovation, Quality, and Teamwork are at the heart of everything we do."
+    },
+    "team": {
+      "tittle": "Meet The Leadership",
+      "desc": "The Passionate people behind NexGen Corp who lead our strategy and culture",
+      "ceo": "CEO & Founder",
+      "cto": "Chief Technology Officer",
+      "designer": "Lead Designer",
+      "developer": "Senior Developer"
+    }
+  },
+  "services": {
+    "title": "What We Do",
+    "title_main": "Solutions Tailored to your Business needs",
+    "subtitle": "We leverage cutting-edge technology and creative strategy to drive growth and efficiency for your organization.",
+    "items": {
+      "brand": {
+        "title": "Brand Identity",
+        "desc": "Logo design, typography, and visual guidelines to establish your brand's unique voice in the market."
+      },
+      "web": {
+        "title": "Web Development",
+        "desc": "Responsive websites and custom web applications built for high performance and scalability."
+      },
+      "marketing": {
+        "title": "Digital Marketing",
+        "desc": "SEO, social media strategy, and paid advertising campaigns designed to grow your audience."
+      },
+      "strategy": {
+        "title": "Business Strategy",
+        "desc": "Market analysis and growth consulting to guide your business forward with data-driven decisions."
+      },
+      "cloud": {
+        "title": "Cloud Solutions",
+        "desc": "Secure cloud infrastructure migration and management to ensure your data is always accessible."
+      },
+      "analytics": {
+        "title": "Analytics & AI",
+        "desc": "Harness the power of artificial intelligence and advanced analytics to optimize operations."
+      },
+      "learn_more": "Learn More"
+    },
+    "cta": {
+      "title": "Ready to start your project?",
+      "desc": "Contact us today for a detailed proposal tailored specifically to your needs and goals.",
+      "button1": "Get a Quote",
+      "button2": "View Portfolio"
+    }
+  },
+  "portfolio": {
+    "title": "OUR PORTOFOLIO",
+    "subtitle": "Selected & Digital Innovations",
+    "desc": "We leverage cutting-edge technology and creative strategy to drive growth and efficiency for your organization",
+    "stats": {
+      "experience": "Years of Experience",
+      "projects": "Project Delivered",
+      "awards": "Global Awards"
+    },
+    "all_projects": "All Projects",
+    "view_project": "View All Project",
+    "items":{
+      "project1":{
+        "title": "BRANDING",
+        "subtitle": "FinTech Rebrand",
+        "desc": "Complete visual identity overhaul for a leading financial services provider."
+      },
+      "project2":{
+        "title": "WEB DEVELOPMENT",
+        "subtitle": "E-commerce Platform",
+        "desc": "Custom e-commerce platform development for a global retail brand."
+      },
+      "project3":{
+        "title": "DIGITAL MARKETING",
+        "subtitle": "Growth Campaign",
+        "desc": "Strategic digital marketing campaign resulting in 300% ROI."
+      },
+      "project4":{
+        "title": "ANALYTICS & AI",
+        "subtitle": "Operations Optimization",
+        "desc": "Harness the power of artificial intelligence and advanced analytics to optimize operations."
+      },
+      "project5":{
+        "title": "BRANDING",
+        "subtitle": "Healthcare Brand Identity",
+        "desc": "Developed a cohesive brand identity for a new healthcare startup."
+      },
+      "project6":{
+        "title": "WEB DEVELOPMENT",
+        "subtitle": "EcoStream App",
+        "desc": "Mobile application development for sustainable energy monitoring."
+      }
+    }
+
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind? Let's talk about it.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "message": "Your Message",
+      "send": "Send Message"
+    },
+    "info": {
+      "address": "123 Tech Street, Silicon Valley, USA",
+      "phone": "+1 234 567 890"
+    }
+  },
+  "footer": {
+    "tittle": "Empowering businesses with innovative strategies and digital solutions. We turn ideas into reality.",
+    "company": "COMPANY",
+    "services": "SERVICES",
+    "update": "STAY UPDATED",
+    "update_desc": "Subscribe to our newsletter for the latest news and updates.",
+    "mark": " NexGen Corp. All rights reserved."
+  },
+  "notfound": {
+    "title": "Page Not Found",
+    "desc": "Sorry, the page you are looking for does not exist.",
+    "back": "Back to Home"
   }
 }

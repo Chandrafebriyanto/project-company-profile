@@ -1,6 +1,9 @@
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section className="h-full items-center flex my-20 px-[min(3rem,5%)] gap-10 lg:flex-row flex-col">
       <div>
@@ -17,8 +20,7 @@ function Hero() {
         >
           <span className="relative inline-flex h-2 w-2 rounded-full bg-primary"></span>
           <p className="text-primary text-sm font-bold">
-            {" "}
-            Top Rated Agency 2025
+            {t("hero.tittle")}
           </p>
         </motion.div>
         <motion.h1
@@ -33,8 +35,8 @@ function Hero() {
           viewport={{ once: true }} 
           className="mb-6 text-4xl font-black leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl"
         >
-          Strategic Branding for{" "}
-          <span className="text-primary">Modern Business</span>
+          {t("hero.title_main")}{" "}
+          <span className="text-primary">{t("hero.title_highlight")}</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, x: -200 }}
@@ -48,9 +50,7 @@ function Hero() {
           viewport={{ once: true }} 
           className="mb-8 max-w-2xl text-lg leading-relaxed text-slate-600 lg:mx-0 mx-auto"
         >
-          We help forward-thinking companies define their identity and connect
-          with their audience through innovative design, digital strategy, and
-          creative storytelling.
+          {t("hero.subtitle")}
         </motion.p>
         <motion.div
           initial={{ opacity: 0, x: -200 }}
@@ -65,7 +65,7 @@ function Hero() {
           className="flex flex-col items-center gap-4 sm:flex-row lg:justify-start justify-center"
         >
           <button className="group relative flex h-12 min-w-[160px] items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary px-8 text-base font-bold text-white shadow-lg shadow-blue-500/25 transition-all hover:bg-blue-700 hover:shadow-blue-500/40 active:scale-95">
-            <span>Hubungi Kami</span>
+            <span>{t("hero.cta_secondary")}</span>
             <span className="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">
               arrow_forward
             </span>
@@ -74,7 +74,7 @@ function Hero() {
             <span className="material-symbols-outlined text-lg text-primary">
               play_circle
             </span>
-            <span>Watch Video</span>
+            <span>{t("hero.cta_primary")}</span>
           </button>
         </motion.div>
 
@@ -113,9 +113,9 @@ function Hero() {
             </div>
           </div>
           <div className="text-center text-sm font-medium text-slate-600 lg:text-left">
-            Trusted by{" "}
-            <span className="font-bold text-slate-900 ">500+ companies</span>{" "}
-            worldwide.
+            {t("hero.client_first")}{" "}
+            <span className="font-bold text-slate-900 ">{t("hero.client_second")}</span>{" "}
+            {t("hero.client")}
           </div>
         </motion.div>
       </div>
@@ -146,7 +146,7 @@ function Hero() {
               </div>
               <div>
                 <p className="text-xs font-medium text-slate-500">
-                  Growth Rate
+                  {t("hero.rate")}
                 </p>
                 <p className="text-lg font-bold text-slate-900">+124%</p>
               </div>

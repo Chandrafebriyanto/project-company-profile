@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import ServicesItem from "./components/ServicesItem";
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 function Services() {
+  const {t} = useTranslation()
   return (
     <>
       {/* Services Intro */}
@@ -14,7 +16,7 @@ function Services() {
             transition={{ type: "tween", duration: 1, ease: "easeInOut" }}
             className="flex items-center gap-1 bg-primary/20 px-3 py-1 rounded-full border border-slate-200 w-max mb-1"
           >
-            <p className="text-primary text-sm font-bold"> What We Do</p>
+            <p className="text-primary text-sm font-bold"> {t("services.title")}</p>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: -100 }}
@@ -27,7 +29,7 @@ function Services() {
             }}
             className="font-black text-[2rem] leading-none my-10 lg:text-[4rem] text-slate-900"
           >
-            Solutions Tailored to your Business needs
+            {t("services.title_main")}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: -100 }}
@@ -40,8 +42,7 @@ function Services() {
             }}
             className="text-m text-slate-600 lg:text-xl"
           >
-            We leverage cutting-edge technology and creative strategy to drive
-            growth and efficiency for your organization
+            {t("services.subtitle")}
           </motion.p>
         </div>
       </div>
@@ -61,21 +62,20 @@ function Services() {
           >
             <div className="flex flex-col items-center justify-center gap-6 px-6 py-12 text-center sm:px-12 sm:py-16">
               <h2 className="max-w-2xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                Ready to start your project?
+                {t("services.cta.title")}
               </h2>
               <p className="max-w-xl text-lg text-slate-600">
-                Contact us today for a detailed proposal tailored specifically
-                to your needs and goals.
+                {t("services.cta.desc")}
               </p>
               <div className="mt-4 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
                 <Link to="/contact">
                   <button className="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-base font-bold text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 hover:bg-blue-800 hover:scale-105 transition-all">
-                    Get a Quote
+                    {t("services.cta.button1")}
                   </button>
                 </Link>
                 <Link to="/portfolio">
                   <button className="inline-flex h-12 items-center justify-center rounded-lg border border-slate-300 bg-transparent px-8 text-base font-bold text-slate-900 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 transition-colors">
-                    View Portfolio
+                    {t("services.cta.button2")}
                   </button>
                 </Link>
               </div>

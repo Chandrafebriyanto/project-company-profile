@@ -6,6 +6,7 @@ import {
   motion,
 } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const AnimatedNumber = ({
   value,
@@ -29,6 +30,7 @@ const AnimatedNumber = ({
 };
 
 function Stats() {
+  const {t} = useTranslation()
   return (
     <>
       <div className="bg-primary">
@@ -39,7 +41,7 @@ function Stats() {
               <AnimatedNumber value={10} duration={2} />+
             </h2>
             <p className="text-white text-sm lg:text-base">
-              Years of Experience
+              {t("about.stats.experience")}
             </p>
           </div>
 
@@ -47,14 +49,14 @@ function Stats() {
             <h2 className="text-white text-3xl lg:text-5xl font-bold mb-2">
               <AnimatedNumber value={250} duration={2} />+
             </h2>
-            <p className="text-white text-sm lg:text-base">Projects Done</p>
+            <p className="text-white text-sm lg:text-base">{t("about.stats.projects")}</p>
           </div>
 
           <div className="text-center">
             <h2 className="text-white text-3xl lg:text-5xl font-bold mb-2">
               <AnimatedNumber value={50} duration={2} />+
             </h2>
-            <p className="text-white text-sm lg:text-base">Team Members</p>
+            <p className="text-white text-sm lg:text-base">{t("about.stats.team")}</p>
           </div>
 
           {/* Tambahan kolom ke-4 biar grid-cols-4 pas (opsional) */}
@@ -63,7 +65,7 @@ function Stats() {
               <AnimatedNumber value={99} duration={2} />%
             </h2>
             <p className="text-white text-sm lg:text-base">
-              Client Satisfaction
+              {t("about.stats.satisfaction")}
             </p>
           </div>
         </div>
