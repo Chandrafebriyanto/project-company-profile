@@ -1,7 +1,7 @@
 {
   "navbar": {
     "home": "Beranda",
-    "about": "Tentang",
+    "about": "Tentang Kami",
     "services": "Layanan",
     "portfolio": "Portofolio",
     "cta": "Mulai Sekarang"
@@ -16,30 +16,52 @@
     "client_first": "Dipercaya oleh",
     "client_second": "+500 Perusahaan",
     "client": "di seluruh dunia.",
-    "rate": "Tingkat Pertumbuhan"
+    "rate": "Tingkat Pertumbuhan",
+    "collaboration": "Dipercaya oleh Pemimpin Industri"
   },
   "testimonial": {
     "title": "Apa Kata Klien Kami",
     "review1": "Tim ini mengubah kehadiran digital kami sepenuhnya. Perhatian terhadap detail dan komitmen terhadap kualitas tidak tertandingi.",
     "review2": "Kualitas luar biasa dan dedikasi terhadap tujuan proyek. Mereka mengirimkan tepat waktu dan melampaui semua harapan kami.",
-    "review3": "Mitra terpercaya yang secara konsisten memberikan hasil tingkat atas. Kami sangat merekomendasikan layanan mereka."
-  },
-  "stats": {
-    "experience": "Tahun Pengalaman",
-    "projects": "Proyek Selesai",
-    "team": "Anggota Tim",
-    "satisfaction": "Kepuasan Klien"
+    "review3": "Mitra terpercaya yang secara konsisten memberikan hasil tingkat atas. Kami sangat merekomendasikan layanan mereka untuk perusahaan mana pun."
   },
   "about": {
-    "title": "Tentang Kami",
-    "subtitle": "Kami adalah tim pengembang, desainer, dan ahli strategi yang bersemangat.",
-    "mission_title": "Misi Kami",
-    "mission_desc": "Memberdayakan bisnis dengan teknologi inovatif.",
-    "vision_title": "Visi Kami",
-    "vision_desc": "Menjadi mitra teknologi global terkemuka."
+    "hero": {
+      "tittle": "SIAPA KAMI",
+      "subtitle": "Membangun Masa Depan Teknologi, Hari Ini.",
+      "desc1": "Didirikan pada tahun 2015, NexGen Corp berawal dari ide sederhana: membuat teknologi kelas perusahaan dapat diakses oleh semua orang. Kami adalah tim inovator, insinyur, dan ahli strategi yang berdedikasi untuk memberikan keunggulan.",
+      "desc2": "Hari ini, kami melayani ribuan klien di seluruh dunia, membantu mereka menavigasi transformasi digital dengan percaya diri dan kejelasan.",
+      "cta": "Sejarah Kami"
+    },
+    "stats": {
+      "experience": "Tahun Pengalaman",
+      "projects": "Proyek Selesai",
+      "team": "Anggota Tim",
+      "satisfaction": "Kepuasan Klien"
+    },
+    "items": {
+      "tittle": "Visi & Misi",
+      "desc": "Didorong oleh tujuan dan didefinisikan oleh komitmen kami terhadap integritas dan inovasi. Kami tidak hanya membangun produk; kami membangun hubungan.",
+      "mission_title": "Misi Kami",
+      "mission_desc": "Memberikan keunggulan melalui produk inovatif dan layanan yang berpusat pada pelanggan yang memecahkan masalah dunia nyata.",
+      "vision_title": "Visi Kami",
+      "vision_desc": "Menjadi pemimpin global dalam solusi teknologi berkelanjutan yang memberdayakan bisnis untuk berkembang di dunia digital.",
+      "value_tittle": "Nilai Kami",
+      "value_desc": "Integritas, Inovasi, Kualitas, dan Kerja Sama Tim adalah inti dari semua yang kami lakukan."
+    },
+    "team": {
+      "tittle": "Temui Pimpinan",
+      "desc": "Orang-orang bersemangat di balik NexGen Corp yang memimpin strategi dan budaya kami.",
+      "ceo": "CEO & Pendiri",
+      "cto": "Chief Technology Officer",
+      "designer": "Desainer Utama",
+      "developer": "Pengembang Senior"
+    }
   },
   "services": {
-    "title": "Layanan Kami",
+    "title": "Apa yang Kami Lakukan",
+    "title_main": "Solusi yang Disesuaikan dengan Kebutuhan Bisnis Anda",
+    "subtitle": "Kami memanfaatkan teknologi mutakhir dan strategi kreatif untuk mendorong pertumbuhan dan efisiensi bagi organisasi Anda.",
     "items": {
       "brand": {
         "title": "Identitas Brand",
@@ -64,42 +86,96 @@
       "analytics": {
         "title": "Analitik & AI",
         "desc": "Manfaatkan kekuatan kecerdasan buatan dan analitik canggih untuk mengoptimalkan operasional."
-      }
+      },
+      "learn_more": "Pelajari Lebih Lanjut"
+    },
+    "cta": {
+      "title": "Siap memulai proyek Anda?",
+      "desc": "Hubungi kami hari ini untuk proposal mendetail yang disesuaikan khusus dengan kebutuhan dan tujuan Anda.",
+      "button1": "Dapatkan Penawaran",
+      "button2": "Lihat Portofolio"
     }
   },
   "portfolio": {
-    "title": "Karya Terbaru Kami",
-    "view_project": "Lihat Proyek"
-  },
-  "team": {
-    "title": "Temui Tim Kami",
-    "roles": {
-      "ceo": "CEO & Pendiri",
-      "cto": "Chief Technology Officer",
-      "designer": "Desainer Utama",
-      "developer": "Pengembang Senior"
+    "title": "PORTOFOLIO KAMI",
+    "subtitle": "Inovasi Digital Pilihan",
+    "desc": "Kami memanfaatkan teknologi mutakhir dan strategi kreatif untuk mendorong pertumbuhan dan efisiensi bagi organisasi Anda.",
+    "stats": {
+      "experience": "Tahun Pengalaman",
+      "projects": "Proyek Diselesaikan",
+      "awards": "Penghargaan Global"
+    },
+    "all_projects": "Semua Proyek",
+    "view_project": "Lihat Semua Proyek",
+    "items": {
+      "project1": {
+        "title": "BRANDING",
+        "subtitle": "Rebranding FinTech",
+        "desc": "Penyegaran identitas visual lengkap untuk penyedia layanan keuangan terkemuka."
+      },
+      "project2": {
+        "title": "PENGEMBANGAN WEB",
+        "subtitle": "Platform E-commerce",
+        "desc": "Pengembangan platform e-commerce kustom untuk merek ritel global."
+      },
+      "project3": {
+        "title": "PEMASARAN DIGITAL",
+        "subtitle": "Kampanye Pertumbuhan",
+        "desc": "Kampanye pemasaran digital strategis yang menghasilkan ROI 300%."
+      },
+      "project4": {
+        "title": "ANALITIK & AI",
+        "subtitle": "Optimasi Operasional",
+        "desc": "Memanfaatkan kekuatan AI dan analitik canggih untuk mengoptimalkan operasional."
+      },
+      "project5": {
+        "title": "BRANDING",
+        "subtitle": "Identitas Brand Kesehatan",
+        "desc": "Mengembangkan identitas merek yang kohesif untuk startup kesehatan baru."
+      },
+      "project6": {
+        "title": "PENGEMBANGAN WEB",
+        "subtitle": "Aplikasi EcoStream",
+        "desc": "Pengembangan aplikasi mobile untuk pemantauan energi berkelanjutan."
+      }
     }
   },
   "contact": {
-    "title": "Hubungi Kami",
-    "subtitle": "Punya proyek impian? Mari bicarakan.",
+    "title": "Mari Mulai Percakapan",
+    "subtitle": "Hubungi melalui formulir di bawah atau kontak kami secara langsung. Kami siap bekerja sama.",
     "form": {
       "name": "Nama Lengkap",
       "email": "Alamat Email",
-      "message": "Pesan Anda",
-      "send": "Kirim Pesan"
+      "subject": "Subjek",
+      "message": "Pesan"
     },
     "info": {
-      "address": "Jl. Teknologi No. 123, Jakarta Selatan, Indonesia",
-      "phone": "+62 812 3456 7890"
-    }
+      "office": {
+        "title": "Kantor Kami",
+        "street": "Jl. Bisnis No. 123, Kota Teknologi",
+        "district": "Kawasan Inovasi, JK 12345"
+      },
+      "email": {
+        "title": "Email Kami",
+        "email": "halo@nexgen.com",
+        "other-email": "support@nexgen.com"
+      },
+      "phone": {
+        "title": "Dukungan Telepon",
+        "number": "+62 812-3456-7890",
+        "active": "Senin-Jumat, 08.00 - 16.00"
+      }
+    },
+    "cta-whatsapp": "Chat via WhatsApp",
+    "cta-form": "Kirim Pesan",
+    "cta-desc": "Waktu respon rata-rata: dalam 1 jam"
   },
   "footer": {
     "tittle": "Memberdayakan bisnis dengan strategi inovatif dan solusi digital. Kami mengubah ide menjadi kenyataan.",
     "company": "PERUSAHAAN",
     "services": "LAYANAN",
     "update": "INFO TERBARU",
-    "update_desc": "Berlangganan newsletter kami untuk mendapatkan berita dan informasi terkini.",
+    "update_desc": "Berlangganan newsletter kami untuk mendapatkan berita dan pembaruan terkini.",
     "mark": " NexGen Corp. Hak cipta dilindungi undang-undang."
   },
   "notfound": {

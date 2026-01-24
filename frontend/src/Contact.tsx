@@ -1,6 +1,8 @@
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+  const {t} = useTranslation();
   return (
     <>
       <div className="bg-background-light md:px-20">
@@ -11,11 +13,10 @@ function Contact() {
           className="text-center justify-items-center md:py-18 py-2 px-5 w-max-[900px] mx-auto md:w-[500px] lg:w-[900px]"
         >
           <h1 className="font-black leading-none lg:my-5 md:my-4 my-3 lg:text-6xl md:text-4xl text-2xl text-slate-900">
-            Let's Start a Conversation
+            {t("contact.title")}
           </h1>
           <p className="text-m text-slate-600 lg:text-xl md:text-base text-sm leading-none">
-            Reach out via the form below or contact us directly. We are ready to
-            work together
+            {t("contact.subtitle")}
           </p>
         </motion.div>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-5 px-10 pb-10">
@@ -37,12 +38,12 @@ function Contact() {
                 </span>
               </div>
               <div>
-                <h1 className="font-bold md:text-xl text-base">Our Office</h1>
+                <h1 className="font-bold md:text-xl text-base">{t("contact.info.office.title")}</h1>
                 <p className="text-slate-600 md:text-sm text-xs my-1">
-                  123 Business Rd, Tech City
+                  {t("contact.info.office.street")}
                 </p>
                 <p className="text-slate-600 md:text-sm text-xs ">
-                  Innovation District, CA 90210
+                  {t("contact.info.office.district")}
                 </p>
               </div>
             </motion.div>
@@ -63,12 +64,12 @@ function Contact() {
                 </span>
               </div>
               <div>
-                <h1 className="font-bold md:text-xl text-base">Email Us</h1>
+                <h1 className="font-bold md:text-xl text-base">{t("contact.info.email.title")}</h1>
                 <p className="text-slate-600 md:text-sm text-xs my-1">
-                  hello@company.com
+                  {t("contact.info.email.email")}
                 </p>
                 <p className="text-slate-600 md:text-sm text-xs ">
-                  support@company.com
+                  {t("contact.info.email.other-email")}
                 </p>
               </div>
             </motion.div>
@@ -90,13 +91,13 @@ function Contact() {
               </div>
               <div>
                 <h1 className="font-bold md:text-xl text-base">
-                  Phone Support
+                  {t("contact.info.phone.title")}
                 </h1>
                 <p className="text-slate-600 md:text-sm text-xs my-1">
-                  +62 856-9546-1123
+                  {t("contact.info.phone.number")}
                 </p>
                 <p className="text-slate-600 md:text-sm text-xs ">
-                  Mon-Fri, 8am - 4pm
+                  {t("contact.info.phone.active")}
                 </p>
               </div>
             </motion.div>
@@ -115,7 +116,7 @@ function Contact() {
                 chat
               </span>
               <a href="https://wa.me/6285695461123">
-                <h1 className="font-semibold text-white">Chat on WhatsApp</h1>
+                <h1 className="font-semibold text-white">{t("contact.cta-whatsapp")}</h1>
               </a>
             </motion.button>
             <motion.p
@@ -129,7 +130,7 @@ function Contact() {
               }}
               className="text-center text-slate-600 md:text-sm text-xs"
             >
-              Typical response time: within 1 hour
+              {t("contact.cta-desc")}
             </motion.p>
           </div>
 
@@ -148,7 +149,7 @@ function Contact() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <label className="flex flex-col gap-2">
                   <span className="text-sm font-semibold text-slate-900 ">
-                    Name <span className="text-red-500">*</span>
+                    {t("contact.form.name")} <span className="text-red-500">*</span>
                   </span>
                   <input
                     className="w-full h-12 rounded-lg border-2 border-slate-300  bg-white  px-4 text-base text-slate-900 placeholder-slate-400 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
@@ -158,7 +159,7 @@ function Contact() {
                 </label>
                 <label className="flex flex-col gap-2">
                   <span className="text-sm font-semibold text-slate-900">
-                    Email <span className="text-red-500">*</span>
+                    {t("contact.form.email")} <span className="text-red-500">*</span>
                   </span>
                   <input
                     className="w-full h-12 rounded-lg border-2 border-slate-300  bg-white px-4 text-base text-slate-900 placeholder-slate-400 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
@@ -169,7 +170,7 @@ function Contact() {
               </div>
               <label className="flex flex-col gap-2 mb-6">
                 <span className="text-sm font-semibold text-slate-900">
-                  Subject
+                  {t("contact.form.subject")}
                 </span>
                 <select className="w-full h-12 rounded-lg border-2 border-slate-300  bg-white px-4 text-base text-slate-900 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all">
                   <option>General Inquiry</option>
@@ -180,18 +181,18 @@ function Contact() {
               </label>
               <label className="flex flex-col gap-2 mb-8">
                 <span className="text-sm font-semibold text-slate-900">
-                  Message <span className="text-red-500">*</span>
+                  {t("contact.form.message")} <span className="text-red-500">*</span>
                 </span>
                 <textarea
                   className="w-full min-h-[160px] rounded-lg border-2 border-slate-300  bg-white p-4 text-base text-slate-900 placeholder-slate-400 focus:border-primary focus:ring-1 focus:ring-primary outline-none resize-y transition-all"
-                  placeholder="Tell us about your project..."
+                  placeholder={t("contact.form.message")}
                 ></textarea>
               </label>
               <button
                 className="w-full md:w-auto min-w-[160px] h-12 bg-primary hover:bg-blue-800 hover:shadow-lg text-white font-bold rounded-lg px-8 transition-colors flex items-center justify-center gap-2"
                 type="submit"
               >
-                <span>Send Message</span>
+                <span>{t("contact.cta-form")}</span>
                 <span className="material-symbols-outlined text-[20px]">
                   send
                 </span>

@@ -25,6 +25,7 @@
     "review2": "Exceptional quality and dedication to the project goals. They delivered on time and exceeded all our expectations.",
     "review3": "A trustworthy partner that consistently delivers top-tier results. We highly recommend their services to any enterprise."
   },
+
   "about": {
     "hero": {
       "tittle": "WHO WE ARE",
@@ -58,6 +59,7 @@
       "developer": "Senior Developer"
     }
   },
+
   "services": {
     "title": "What We Do",
     "title_main": "Solutions Tailored to your Business needs",
@@ -96,6 +98,7 @@
       "button2": "View Portfolio"
     }
   },
+
   "portfolio": {
     "title": "OUR PORTOFOLIO",
     "subtitle": "Selected & Digital Innovations",
@@ -107,54 +110,71 @@
     },
     "all_projects": "All Projects",
     "view_project": "View All Project",
-    "items":{
-      "project1":{
+    "items": {
+      "project1": {
         "title": "BRANDING",
         "subtitle": "FinTech Rebrand",
         "desc": "Complete visual identity overhaul for a leading financial services provider."
       },
-      "project2":{
+      "project2": {
         "title": "WEB DEVELOPMENT",
         "subtitle": "E-commerce Platform",
         "desc": "Custom e-commerce platform development for a global retail brand."
       },
-      "project3":{
+      "project3": {
         "title": "DIGITAL MARKETING",
         "subtitle": "Growth Campaign",
         "desc": "Strategic digital marketing campaign resulting in 300% ROI."
       },
-      "project4":{
+      "project4": {
         "title": "ANALYTICS & AI",
         "subtitle": "Operations Optimization",
         "desc": "Harness the power of artificial intelligence and advanced analytics to optimize operations."
       },
-      "project5":{
+      "project5": {
         "title": "BRANDING",
         "subtitle": "Healthcare Brand Identity",
         "desc": "Developed a cohesive brand identity for a new healthcare startup."
       },
-      "project6":{
+      "project6": {
         "title": "WEB DEVELOPMENT",
         "subtitle": "EcoStream App",
         "desc": "Mobile application development for sustainable energy monitoring."
       }
     }
-
   },
+
   "contact": {
-    "title": "Get In Touch",
-    "subtitle": "Have a project in mind? Let's talk about it.",
+    "title": "Let's Start a Conversation",
+    "subtitle": "Reach out via the form below or contact us directly. We are ready to work together",
     "form": {
-      "name": "Full Name",
+      "name": "Name",
       "email": "Email Address",
-      "message": "Your Message",
-      "send": "Send Message"
+      "subject": "Subject",
+      "message": "Message"
     },
     "info": {
-      "address": "123 Tech Street, Silicon Valley, USA",
-      "phone": "+1 234 567 890"
-    }
+      "office": {
+        "title": "Our Office",
+        "street": "123 Business Rd, Tech City",
+        "district": "Innovation District, CA 90210"
+      },
+      "email": {
+        "title": "Email Us",
+        "email": "hello@company.com",
+        "other-email": "support@company.com"
+      },
+      "phone": {
+        "title": "Phone Support",
+        "number": "+1 (555) 123-4567",
+        "active": "Mon-Fri, 8am - 4pm"
+      }
+    },
+    "cta-whatsapp": "Chat on WhatsApp",
+    "cta-form": "Send Message",
+    "cta-desc": "Typical response time: within 1 hour"
   },
+
   "footer": {
     "tittle": "Empowering businesses with innovative strategies and digital solutions. We turn ideas into reality.",
     "company": "COMPANY",
@@ -163,6 +183,7 @@
     "update_desc": "Subscribe to our newsletter for the latest news and updates.",
     "mark": " NexGen Corp. All rights reserved."
   },
+
   "notfound": {
     "title": "Page Not Found",
     "desc": "Sorry, the page you are looking for does not exist.",
